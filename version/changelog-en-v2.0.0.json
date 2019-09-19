@@ -1,0 +1,41 @@
+{
+	"Version": "2.0.0",
+	"Flair": "Major Release",
+	"New": [
+		{
+			"Headline": "Customizable icon styling",
+			"Body": "Customise the positioning, scale and more inside the AssetIconAttribute parameters.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/5"
+		},
+		{
+			"Headline": "Support for multiple graphics",
+			"Body": "Added support for multiple graphics being rendered for a single asset.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/6"
+		},
+		{
+			"Headline": "Preferences menu",
+			"Body": "Added a tab to Unity's Preferences Window for customising AssetIcons.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/3"
+		},
+		{
+			"Headline": "Updated Documentation Format",
+			"Body": "Removed the PDF documentation in favour of interactive HTML documentation.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/4"
+		}
+	],
+	"Changed": [],
+	"Removed": [
+		{
+			"Headline": "Modules System",
+			"Body": "Removed the old \"Modules\" system in favour of the preferences menu.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/16"
+		}
+	],
+	"Fixes": [
+		{
+			"Headline": "ReflectionTypeLoadException after code recompilation",
+			"Body": "This exception was being thrown after code recompilation only on certain environments.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/8"
+		}
+	]
+}
