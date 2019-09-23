@@ -3,12 +3,16 @@
 	"VersionHistory":
 	[
 		{
+			"Version": "1.0.0",
+			"Timestamp": 1508846400
+		},
+		{
 			"Version": "1.0.3",
-			"Timestamp": 0
+			"Timestamp": 1507809600
 		},
 		{
 			"Version": "2.0.0",
-			"Timestamp": 0
+			"Timestamp": 1569266773
 		}
 	]
 }
