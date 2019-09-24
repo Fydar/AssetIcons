@@ -1,0 +1,20 @@
+{
+	"Version": "1.0.3",
+	"Flair": "Minor Release",
+	"New": [
+		{
+			"Headline": "Modules System",
+			"Body": "Added the Modules System to render icons for files by their extension type.",
+			"Issue": ""
+		}
+	],
+	"Changed": [],
+	"Removed": [],
+	"Fixes": [
+		{
+			"Headline": "Fixes rendering Sprites when they are bundled",
+			"Body": "Fix rendering of sprites during play-mode when sprites are sprite-atlased to increase performance.",
+			"Issue": ""
+		}
+	]
+}
