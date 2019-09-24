@@ -1,5 +1,5 @@
 {
-	"CurrentVersion": "1.0.3",
+	"CurrentVersion": "2.0.0",
 	"VersionHistory":
 	[
 		{
@@ -8,7 +8,7 @@
 		},
 		{
 			"Version": "1.0.3",
-			"Timestamp": 1507809600
+			"Timestamp": 1524052800
 		},
 		{
 			"Version": "2.0.0",
