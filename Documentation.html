@@ -1,0 +1,4512 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>AssetIcons - Documentation</title>
+	<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAABbqAAAW6gHljkMQAAAAB3RJTUUH4ggdFAQMc65WKQAABkRJREFUWMO9V1tsVFUUXefcuXNnpjOdTlsobSlKQbBSqxIKLbX0IZZiAUEwRg3GmCCGEI2ESPTHaIyPDzUGJTyEUBCx8pI3fDQUioWhUoyAooAg2pZ2+ph2yjzu42w/ppSWzpQWjCeZzL337Oyz9rlrr7MuwxBGR8HoIkZ4HqCNnEsX7VWXPTfnvI+6EPdzO4Y62FCCvVPTipmiVHbf1oPoF0b62tijf/3QA/JhB5xnfYPOaRoSXCGCve5SwVgqMXlmR+GYEAOtolBoPTOZ6gGfd7Ap+Z0CtDUxPdfSSNgj7yNTiPE3YbGeA2j1UGqKCEBdbe2d3K6tjZ2sr3MeMueEDoMGeJ8k6umvawsD5Z/Cm3IXHAh+CViWdoNYJScxs+0dgM0A2HgAIJ8Jgd3OyMwhAg8GJzlO1p/uGC/D+bs2NA6EvgK4yW7V1uJ+MP4JmDQ74n5RZOqygH+Ww914ujM7CbG1TUMnIZetMWCmA2BsWvQXJiI/17UPYt2N+ztzUhB7suHu21BbYyuEpByJFkyqhEBFXF/mGPox57GrBbjL0ZNKW2uHvNhfxciYwYhCkaPp9rasDZ2/+kS4/+33BmDVrGQAQPn8nPa6rHEKo/50Z30BBERnx3PDW6FPnl8N59kuAMCUBdV3B+CNlIsAAIuubP1j7H2oe+RB9ANh6mG8LvxdBa4zrVe8U5Jxakc+Js+vTgcA9/Z8EBESs/cPXQe+8ZQu4pDHSIaBy/en4OLYUbftQHh5qOpil/t6rScdiHM3AgD8ft1Xtsjtn/7SiVfT8g/Ko1Ict/g1dufAAFY2TkC5p8DKSVnWe7Lu4XG4lD4SXIjuwgmkaV84a/7e0JZhxbA/w3ET5xzFuYNFHpCosFnZmkcfim9JHi5vKnm5ZiYA4NIz0btgTVM2FifVYkNTUYmVuQ73VzdCzunzSG3wgDHAuNFuVV5H8Pa4yQuqEWPlkxw2qQaA3NMkBrUHVLHcHzA2h0Kkn9lTQACQ+VQlzh144lYbbmme3cAhJ0eWWEKe+yxSr3ugBzoSzW+gNVpFs986c415g2lgfdVKENoNnbarmqio3JxXCQArPvw9DKC8uWSFGfaPBySLIBQdr0NC+/VR0qLQ35Fictz+uAcMrbFj/XkLTNHPOUOgubNLX1a99fEt/OuGqfEybMvvZA4EZziZnYkfs9LTI80/d2YD7uPIZYokK5kJAzJf4hhut0lL4rMPWbnBdUmH/3OVghVNIdwwiEFiAO/+sV7AblgV/DN63P6V/0xIWdUwsSfhZ1dPoeKxVyCocQGIJHNGPCBFL0c38FurVy1tqy0N9I3aPrcSQLEkM7jMBJcZcJlZ9z/glAGHiYExte7zC/SCTmYP5u5qm3FiS5ZTNq+2sAm5oDQwiaNr3xVo13zhKnrLvU6XLlzuyr1S9WRLP0fEZH6ESBQbRGgJAS0hdB9/vbjACAymiQbhF5AuJlV9IEZYHLIgXQaFt54MAdv0NHi//vWmdnS/e2ry3dDzr1Q92ZL77DGc2DatrxDJEt99R1dGgCEMxMlx5tIRZZZMZ5ZNkCEDJoAct4pRJFgeSezBbxjk87SpZce/y78OACe2TeuvhOqs7WcZY/rAEAgZzkw8NWIWhilJMMgAIMBoRD+kSoYLTOYQgkLtnWrOqR0Fpz9afTmKFG8tvXn1fbSFY6QYFCQWIcc1FRKT+swByQD6+gUp0QIlNUbtaNcW1nxf8GtC9l68/dqYgW25vHdBmWbo+/qurWOULR15ifkwMVNERWeiMKLFVDXR8F2uM3VQh5GzciF0Q69jQOhmZTbJhrzEQkxPKomyOMAQG1VFFJmnlBz3Fg8KQMfVJnAu+QjoPmbop8eHFS8dHTMGmohuMokcUQEQgARFWoatTXzQX0Z897wKAWrF0z8sAYCZJ7/Ni5ct6zkLu+P+q0zwgpJ9DNAAqAQEGaACUInzIIiaW1VafCDX0TU4AHueiRVzdnb2flZcs8nuMlvfj+GmN2/3Sp16QpZNmlQvgYSJk9EpTJrCudEGMg4/poj/7NsQAErd35YlyJZ1HCwZYd43b5k4L+meTekdx8738OLPu3Boygv76wNdGX6hbwaAkNDLAQC73sX/M/a+h3cuhJ373NqKZdN+3PjQvaT7F0b7g0mfJZj2AAAAAElFTkSuQmCC">
+
+	<style type="text/css">
+		div, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.page {
+			background: #eee
+		}
+
+		html {
+			font-size: 14px;
+			font-family: sans-serif;
+			line-height: 1.4;
+		}
+
+		/* All Text */
+		h1, h2, h3, h4, h5, p, body {
+			color: #5a5a5a;
+			text-align: left;
+			font-weight: normal;
+		}
+
+		h1 {
+			font-size: 1.8em;
+			line-height: 1.6;
+			margin: 25px 0px 15px 0px;
+		}
+
+		h2 {
+			font-size: 1.4em;
+			line-height: 1.6;
+			margin: 25px 0px 15px 0px;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.4;
+			margin: 10px 0px 10px 0px;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		article {
+			display: none;
+			position: fixed;
+			overflow-y: scroll;
+			margin-left: 280px;
+			overflow-x: hidden;
+			height: 100%;
+
+			width: -moz-available;
+			width: -webkit-fill-available;
+			width: fill-available;
+		}
+
+		.Logo {
+			width: 96px;
+			height: 96px;
+			text-align: center;
+			margin: 72px auto 3em auto;
+			padding: 8px;
+		}
+
+		.site-title {
+			font-size: 1.6em;
+			padding-bottom: 0.2em;
+		}
+
+			.site-title a {
+				color: #222222;
+				text-decoration: none;
+			}
+
+				.site-title a:visited {
+					color: #222222;
+				}
+
+				.site-title a:hover {
+					color: #777
+				}
+
+		.site-tagline {
+			margin-bottom: 3em;
+			padding-bottom: 0.6em;
+			font-size: 0.85em;
+			color: #444;
+		}
+
+			.site-tagline a {
+				text-decoration: none;
+			}
+
+				.site-tagline a:visited {
+					color: #444;
+				}
+
+				.site-tagline a:hover {
+					color: #aaa
+				}
+
+		.sidebar {
+			position: fixed;
+			left: 0;
+			height: 100%;
+			width: 280px;
+			text-align: center;
+			background: #fff;
+			list-style: none;
+			overflow-x: hidden;
+			overflow-y: overlay;
+			box-shadow: 0px 1.5px 5px #ccc;
+		}
+
+		.navigation a, .tab label {
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 22px;
+			padding: 4px 6px 4px 20px;
+			text-align: left;
+			color: #5a5a5a;
+			text-decoration: none;
+		}
+
+			.navigation a:hover, .tab label:hover {
+				background: #f3f3f3;
+				text-decoration: underline;
+				text-decoration-color: #777777;
+			}
+
+		.allArticles ,
+#AssetIcons_AssetIconAttribute:target ~ .sidebar a[href="#AssetIcons_AssetIconAttribute"],
+#AssetIcons_IconAnchor:target ~ .sidebar a[href="#AssetIcons_IconAnchor"],
+#AssetIcons_IconAspect:target ~ .sidebar a[href="#AssetIcons_IconAspect"],
+#AssetIcons_IconColor:target ~ .sidebar a[href="#AssetIcons_IconColor"],
+#AssetIcons_IconProjection:target ~ .sidebar a[href="#AssetIcons_IconProjection"],
+#AssetIcons_ProductInformation:target ~ .sidebar a[href="#AssetIcons_ProductInformation"],
+#AssetIcons_StyleDefinition:target ~ .sidebar a[href="#AssetIcons_StyleDefinition"],
+#AssetIcons_Demo_Item:target ~ .sidebar a[href="#AssetIcons_Demo_Item"],
+#AssetIcons_Demo_Prop:target ~ .sidebar a[href="#AssetIcons_Demo_Prop"],
+#AssetIcons_Demo_VoxelItem:target ~ .sidebar a[href="#AssetIcons_Demo_VoxelItem"],
+#AssetIcons_Editors_AssetIconDrawer:target ~ .sidebar a[href="#AssetIcons_Editors_AssetIconDrawer"],
+#AssetIcons_Editors_AssetIconProjectHooks:target ~ .sidebar a[href="#AssetIcons_Editors_AssetIconProjectHooks"],
+#AssetIcons_Editors_AssetIconRenderer:target ~ .sidebar a[href="#AssetIcons_Editors_AssetIconRenderer"],
+#AssetIcons_Editors_AssetIconsPreferences:target ~ .sidebar a[href="#AssetIcons_Editors_AssetIconsPreferences"],
+#AssetIcons_Editors_CameraSetup:target ~ .sidebar a[href="#AssetIcons_Editors_CameraSetup"],
+#AssetIcons_Editors_CompiledStyleDefinition:target ~ .sidebar a[href="#AssetIcons_Editors_CompiledStyleDefinition"],
+#AssetIcons_Editors_RenderCache:target ~ .sidebar a[href="#AssetIcons_Editors_RenderCache"],
+#AssetIcons_Editors_Preferences_AssetReference:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_AssetReference"],
+#AssetIcons_Editors_Preferences_BoolEventField:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_BoolEventField"],
+#AssetIcons_Editors_Preferences_ColorTint:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_ColorTint"],
+#AssetIcons_Editors_Preferences_ColorTintEventField:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_ColorTintEventField"],
+#AssetIcons_Editors_Preferences_EventField:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_EventField"],
+#AssetIcons_Editors_Preferences_EventField__:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_EventField__"],
+#AssetIcons_Editors_Preferences_FromValuesAttribute:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_FromValuesAttribute"],
+#AssetIcons_Editors_Preferences_IconMapping:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_IconMapping"],
+#AssetIcons_Editors_Preferences_IntEventField:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_IntEventField"],
+#AssetIcons_Editors_Preferences_KeyValueEventTable___:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_KeyValueEventTable___"],
+#AssetIcons_Editors_Preferences_KeyValueTable:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_KeyValueTable"],
+#AssetIcons_Editors_Preferences_KeyValueTable___:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_KeyValueTable___"],
+#AssetIcons_Editors_Preferences_PreferencesPreset:target ~ .sidebar a[href="#AssetIcons_Editors_Preferences_PreferencesPreset"] {
+			background: #f6f6f6;
+		}
+
+		.enabedArticle ,
+#AssetIcons_AssetIconAttribute:target,
+#AssetIcons_AssetIconAttribute_Style:target,
+#AssetIcons_AssetIconAttribute_FilePath:target,
+#AssetIcons_AssetIconAttribute_LineNumber:target,
+#AssetIcons_IconAnchor:target,
+#AssetIcons_IconAnchor_Center:target,
+#AssetIcons_IconAnchor_Top:target,
+#AssetIcons_IconAnchor_Bottom:target,
+#AssetIcons_IconAnchor_Left:target,
+#AssetIcons_IconAnchor_Right:target,
+#AssetIcons_IconAnchor_TopLeft:target,
+#AssetIcons_IconAnchor_TopRight:target,
+#AssetIcons_IconAnchor_BottomLeft:target,
+#AssetIcons_IconAnchor_BottomRight:target,
+#AssetIcons_IconAspect:target,
+#AssetIcons_IconAspect_Fit:target,
+#AssetIcons_IconAspect_Envelop:target,
+#AssetIcons_IconAspect_Stretch:target,
+#AssetIcons_IconColor:target,
+#AssetIcons_IconColor_Transparent:target,
+#AssetIcons_IconColor_Black:target,
+#AssetIcons_IconColor_Gray:target,
+#AssetIcons_IconColor_Grey:target,
+#AssetIcons_IconColor_White:target,
+#AssetIcons_IconColor_Blue:target,
+#AssetIcons_IconColor_Cyan:target,
+#AssetIcons_IconColor_Green:target,
+#AssetIcons_IconColor_Yellow:target,
+#AssetIcons_IconColor_Orange:target,
+#AssetIcons_IconColor_Red:target,
+#AssetIcons_IconColor_Purple:target,
+#AssetIcons_IconColor_Magenta:target,
+#AssetIcons_IconProjection:target,
+#AssetIcons_IconProjection_Perspective:target,
+#AssetIcons_IconProjection_Orthographic:target,
+#AssetIcons_ProductInformation:target,
+#AssetIcons_ProductInformation_Name:target,
+#AssetIcons_ProductInformation_Version:target,
+#AssetIcons_ProductInformation_Description:target,
+#AssetIcons_ProductInformation_Author:target,
+#AssetIcons_ProductInformation_Copyright:target,
+#AssetIcons_ProductInformation_IssueTracker:target,
+#AssetIcons_StyleDefinition:target,
+#AssetIcons_StyleDefinition_Width:target,
+#AssetIcons_StyleDefinition_Height:target,
+#AssetIcons_StyleDefinition_X:target,
+#AssetIcons_StyleDefinition_Y:target,
+#AssetIcons_StyleDefinition_MaxSize:target,
+#AssetIcons_StyleDefinition_Anchor:target,
+#AssetIcons_StyleDefinition_Aspect:target,
+#AssetIcons_StyleDefinition_Display:target,
+#AssetIcons_StyleDefinition_Tint:target,
+#AssetIcons_StyleDefinition_Layer:target,
+#AssetIcons_StyleDefinition_FontStyle:target,
+#AssetIcons_StyleDefinition_TextAnchor:target,
+#AssetIcons_StyleDefinition_Projection:target,
+#AssetIcons_Demo_Item:target,
+#AssetIcons_Demo_Item_Icon:target,
+#AssetIcons_Demo_Prop:target,
+#AssetIcons_Demo_Prop_Icon:target,
+#AssetIcons_Demo_Prop_Border:target,
+#AssetIcons_Demo_VoxelItem:target,
+#AssetIcons_Demo_VoxelItem_Icon:target,
+#AssetIcons_Demo_VoxelItem_Background:target,
+#AssetIcons_Demo_VoxelItem_ItemColor:target,
+#AssetIcons_Demo_VoxelItem_CraftsInto:target,
+#AssetIcons_Editors_AssetIconDrawer:target,
+#AssetIcons_Editors_AssetIconDrawer_BackgroundColor:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawBackground:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawColor:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawObject:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawSprite:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawText:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawTexture:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawTexWithCoords:target,
+#AssetIcons_Editors_AssetIconDrawer_DrawTexWithUVCoords:target,
+#AssetIcons_Editors_AssetIconProjectHooks:target,
+#AssetIcons_Editors_AssetIconProjectHooks_add_OnDrawIcon:target,
+#AssetIcons_Editors_AssetIconProjectHooks_remove_OnDrawIcon:target,
+#AssetIcons_Editors_AssetIconRenderer:target,
+#AssetIcons_Editors_AssetIconRenderer_RenderModel:target,
+#AssetIcons_Editors_AssetIconsPreferences:target,
+#AssetIcons_Editors_AssetIconsPreferences_EditorPrefsKey:target,
+#AssetIcons_Editors_AssetIconsPreferences_CurrentPreferences:target,
+#AssetIcons_Editors_AssetIconsPreferences_DrawGUIStyles:target,
+#AssetIcons_Editors_AssetIconsPreferences_Enabled:target,
+#AssetIcons_Editors_AssetIconsPreferences_PrefabResolution:target,
+#AssetIcons_Editors_AssetIconsPreferences_SelectionTint:target,
+#AssetIcons_Editors_AssetIconsPreferences_TypeIcons:target,
+#AssetIcons_Editors_CameraSetup:target,
+#AssetIcons_Editors_CameraSetup_Padding:target,
+#AssetIcons_Editors_CameraSetup_PreviewDirection:target,
+#AssetIcons_Editors_CameraSetup_TransparentBackground:target,
+#AssetIcons_Editors_CameraSetup_BackgroundColor:target,
+#AssetIcons_Editors_CameraSetup_Orthographic:target,
+#AssetIcons_Editors_CameraSetup_ApplyToCamera:target,
+#AssetIcons_Editors_CameraSetup_Default:target,
+#AssetIcons_Editors_CompiledStyleDefinition:target,
+#AssetIcons_Editors_CompiledStyleDefinition_MaxSize:target,
+#AssetIcons_Editors_CompiledStyleDefinition_Aspect:target,
+#AssetIcons_Editors_CompiledStyleDefinition_Anchor:target,
+#AssetIcons_Editors_CompiledStyleDefinition_Tint:target,
+#AssetIcons_Editors_CompiledStyleDefinition_Layer:target,
+#AssetIcons_Editors_CompiledStyleDefinition_FontStyle:target,
+#AssetIcons_Editors_CompiledStyleDefinition_TextAnchor:target,
+#AssetIcons_Editors_CompiledStyleDefinition_Projection:target,
+#AssetIcons_Editors_CompiledStyleDefinition_Filter:target,
+#AssetIcons_Editors_CompiledStyleDefinition_Default:target,
+#AssetIcons_Editors_RenderCache:target,
+#AssetIcons_Editors_RenderCache_GetTexture:target,
+#AssetIcons_Editors_RenderCache_ClearCache:target,
+#AssetIcons_Editors_Preferences_AssetReference:target,
+#AssetIcons_Editors_Preferences_AssetReference_AssetPath:target,
+#AssetIcons_Editors_Preferences_AssetReference_AssetName:target,
+#AssetIcons_Editors_Preferences_AssetReference_ObjectReference:target,
+#AssetIcons_Editors_Preferences_AssetReference_GetFromPath:target,
+#AssetIcons_Editors_Preferences_BoolEventField:target,
+#AssetIcons_Editors_Preferences_ColorTint:target,
+#AssetIcons_Editors_Preferences_ColorTint_TintColor:target,
+#AssetIcons_Editors_Preferences_ColorTint_TintStrength:target,
+#AssetIcons_Editors_Preferences_ColorTint_Apply:target,
+#AssetIcons_Editors_Preferences_ColorTintEventField:target,
+#AssetIcons_Editors_Preferences_EventField:target,
+#AssetIcons_Editors_Preferences_EventField_add_OnChanged:target,
+#AssetIcons_Editors_Preferences_EventField_remove_OnChanged:target,
+#AssetIcons_Editors_Preferences_EventField_InvokeChanged:target,
+#AssetIcons_Editors_Preferences_EventField__:target,
+#AssetIcons_Editors_Preferences_EventField_T__Value:target,
+#AssetIcons_Editors_Preferences_FromValuesAttribute:target,
+#AssetIcons_Editors_Preferences_FromValuesAttribute_Names:target,
+#AssetIcons_Editors_Preferences_FromValuesAttribute_Values:target,
+#AssetIcons_Editors_Preferences_IconMapping:target,
+#AssetIcons_Editors_Preferences_IntEventField:target,
+#AssetIcons_Editors_Preferences_KeyValueEventTable___:target,
+#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__add_OnChanged:target,
+#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__remove_OnChanged:target,
+#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Add:target,
+#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Clear:target,
+#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Remove:target,
+#AssetIcons_Editors_Preferences_KeyValueTable:target,
+#AssetIcons_Editors_Preferences_KeyValueTable_Clear:target,
+#AssetIcons_Editors_Preferences_KeyValueTable___:target,
+#AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Add:target,
+#AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Clear:target,
+#AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Remove:target,
+#AssetIcons_Editors_Preferences_PreferencesPreset:target,
+#AssetIcons_Editors_Preferences_PreferencesPreset_Enabled:target,
+#AssetIcons_Editors_Preferences_PreferencesPreset_DrawGUIStyles:target,
+#AssetIcons_Editors_Preferences_PreferencesPreset_PrefabResolution:target,
+#AssetIcons_Editors_Preferences_PreferencesPreset_SelectionTint:target,
+#AssetIcons_Editors_Preferences_PreferencesPreset_TypeIcons:target {
+			display: block; /*animation-name:target; animation-duration:.3s; animation-iteration-count:1;*/
+		}
+
+		.breadcrumbsBar {
+			display: block;
+			margin: 60px 10% 2px 10%;
+			padding: 4px;
+			width: auto;
+			overflow: hidden;
+			opacity: 0.3;
+			color: #aaaaaa;
+			-o-transition: 0.125s;
+			-ms-transition: 0.125s;
+			-moz-transition: 0.125s;
+			-webkit-transition: 0.125s;
+			transition: 0.125s;
+		}
+
+			.breadcrumbsBar:hover {
+				opacity: 1;
+			}
+
+			.breadcrumbsBar a {
+				text-decoration: none;
+				color: #5a5a5a;
+			}
+
+				.breadcrumbsBar a:hover {
+					text-decoration: underline;
+				}
+
+		/* pages */
+		.articleStyle {
+			display: block;
+			background: white;
+			border-radius: 2px;
+			margin: 4px 10% 40px 10%;
+			padding: 30px;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+			overflow: hidden;
+		}
+
+		.post-footer {
+			background: rgba(247,247,247);
+			margin: 20px -30px -30px -30px;
+			padding: 10px 30px 10px 30px;
+		}
+
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid #dddddd;
+			margin: 20px 20px 20px 20px;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+			width: 100%;
+		}
+
+			table th {
+				font-size: 15px;
+				text-align: left;
+				padding: 8px;
+				font-weight: 100;
+				background-color: #fcfcfc;
+			}
+
+			table tr {
+				font-size: 13px;
+				border: 1px solid #dddddd;
+				padding: 8px;
+				background-color: #fafafa;
+			}
+
+				table tr:nth-child(even) {
+					background-color: #f1f1f1;
+				}
+
+			table td {
+				padding: 10px 10px;
+			}
+
+		/* Scrollbar */ ::-webkit-scrollbar {
+			width: 10px;
+		}
+		/* Track */ ::-webkit-scrollbar-track {
+			background: #f4f4f4;
+		}
+		/* Handle */ ::-webkit-scrollbar-thumb {
+			background: #ccc;
+		}
+			/* Handle on hover */ ::-webkit-scrollbar-thumb:hover {
+				background: #aaa;
+			}
+
+		img {
+			width: 255px;
+			height: auto;
+		}
+
+		code {
+			font-size: 13px;
+			text-align: left;
+			font-family: Consolas,Monaco,'Andale Mono',monospace;
+			white-space: pre;
+        
+			margin: 1.25em 0;
+			display: block;
+			overflow-x: auto;
+			padding: 10px;
+			background-color: rgba(0,0,0,.01);
+			border-radius: 4px;
+			border-width: 1px;
+			border-color: rgba(51,51,51,.1);
+			border-style: solid;
+			tab-size: 4;
+		}
+
+        table td code,
+        p code {
+			display: inline;
+        
+			overflow-x: unset;
+			padding: unset;
+			background-color: unset;
+			border-radius: unset;
+			border-width: unset;
+			border-style: none;
+			margin:unset;
+        }
+
+			code a {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			code .keyword,
+			code .keyword a {
+				color: #f14124;
+			}
+
+			code .string {
+				color: #fb9c11;
+			}
+
+			code .comment,
+			code .comment a {
+				color: #888;
+			}
+
+			code .type,
+			code .type a {
+				color: #00b050;
+			}
+
+			code .method,
+			code .method a {
+				color: #777;
+			}
+
+			code .parameter {
+				color: #777;
+			}
+
+			code .local {
+				color: #777;
+			}
+
+		/* Acordeon styles */
+		.tab {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+
+			.tab input {
+				position: absolute;
+				opacity: 0;
+				z-index: -1;
+			}
+
+			.tab label {
+				position: relative;
+				cursor: pointer;
+				font-weight: bold;
+				-moz-user-select: -moz-none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+		.tab-content {
+			overflow: hidden;
+			display: none;
+		}
+
+		/* :checked */
+		.tab input:checked ~ .tab-content {
+			display: block;
+		}
+
+		.folderIcon, .scriptIcon {
+			height: 14px;
+			width: 14px;
+			margin: 4px;
+			display: inline-flex;
+			vertical-align: middle;
+		}
+
+		.folderIcon {
+			background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xOCA2aC02YzAtMS4xMDQtLjg5Ni0yLTItMmgtNGMtMS42NTQgMC0zIDEuMzQ2LTMgM3YxMGMwIDEuNjU0IDEuMzQ2IDMgMyAzaDEyYzEuNjU0IDAgMy0xLjM0NiAzLTN2LThjMC0xLjY1NC0xLjM0Ni0zLTMtM3ptLTEyIDBoNGMwIDEuMTA0Ljg5NiAyIDIgMmg2Yy41NTIgMCAxIC40NDggMSAxaC0xNHYtMmMwLS41NTIuNDQ4LTEgMS0xem0xMiAxMmgtMTJjLS41NTIgMC0xLS40NDgtMS0xdi03aDE0djdjMCAuNTUyLS40NDggMS0xIDF6Ii8+PC9zdmc+");
+			background-size: 100% 100%;
+		}
+
+		.tab input:checked ~ label .folderIcon {
+			background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yMi4zIDhoLTIuNGMtLjQtMS4yLTEuNS0yLTIuOC0yaC02YzAtMS4xLS45LTItMi0yaC00LjFjLTEuNyAwLTMgMS4zLTMgM3YxMGMwIDEuNyAxLjMgMyAzIDNoMTJjMS43IDAgMy40LTEuMyAzLjgtM2wyLjItOGMuMS0uNi0uMi0xLS43LTF6bS0xOC4zIDF2LTJjMC0uNi40LTEgMS0xaDRjMCAxLjEuOSAyIDIgMmg2Yy42IDAgMSAuNCAxIDFoLTExLjFjLS42IDAtMS4xLjQtMS4zIDFsLTEuNiA2LjN2LTcuM3ptMTQuOSA3LjVjLS4yLjgtMS4xIDEuNS0xLjkgMS41aC0xMnMtLjQtLjItLjItLjhsMS45LTdjMC0uMS4yLS4yLjMtLjJoMTMuN2wtMS44IDYuNXoiLz48L3N2Zz4=");
+			background-size: 100% 100%;
+		}
+
+		.scriptIcon {
+			background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnPjxwYXRoIGQ9Ik0xNyAyMWgtMTBjLTEuNjU0IDAtMy0xLjM0Ni0zLTN2LTEyYzAtMS42NTQgMS4zNDYtMyAzLTNoMTBjMS42NTQgMCAzIDEuMzQ2IDMgM3YxMmMwIDEuNjU0LTEuMzQ2IDMtMyAzem0tMTAtMTZjLS41NTEgMC0xIC40NDktMSAxdjEyYzAgLjU1MS40NDkgMSAxIDFoMTBjLjU1MSAwIDEtLjQ0OSAxLTF2LTEyYzAtLjU1MS0uNDQ5LTEtMS0xaC0xMHpNMTYgMTFoLThjLS4yNzYgMC0uNS0uMjI0LS41LS41cy4yMjQtLjUuNS0uNWg4Yy4yNzYgMCAuNS4yMjQuNS41cy0uMjI0LjUtLjUuNXpNMTYgOGgtOGMtLjI3NiAwLS41LS4yMjQtLjUtLjVzLjIyNC0uNS41LS41aDhjLjI3NiAwIC41LjIyNC41LjVzLS4yMjQuNS0uNS41ek0xNiAxNGgtOGMtLjI3NiAwLS41LS4yMjQtLjUtLjVzLjIyNC0uNS41LS41aDhjLjI3NiAwIC41LjIyNC41LjVzLS4yMjQuNS0uNS41ek0xNiAxN2gtOGMtLjI3NiAwLS41LS4yMjQtLjUtLjVzLjIyNC0uNS41LS41aDhjLjI3NiAwIC41LjIyNC41LjVzLS4yMjQuNS0uNS41eiIvPjwvZz48L3N2Zz4=");
+			background-size: 100% 100%;
+		}
+
+		.gradientPreview {
+			height: 30px;
+			width: 256px;
+		}
+
+		.hsvSample {
+			background: -moz-linear-gradient(left, #ff0000 0%, #ffff00 50%, #00ff00 100%);
+			background: -webkit-linear-gradient(left, #ff0000 0%,#ffff00 50%,#00ff00 100%);
+			background: -o-linear-gradient(left, #ff0000 0%,#ffff00 50%,#00ff00 100%);
+			background: -ms-linear-gradient(left, #ff0000 0%,#ffff00 50%,#00ff00 100%);
+			background: linear-gradient(to right, #ff0000 0%,#ffff00 50%,#00ff00 100%);
+		}
+
+		.rgbSample {
+			background: -moz-linear-gradient(left, #ff0000 0%, #00ff00 100%);
+			background: -webkit-linear-gradient(left, #ff0000 0%,#00ff00 100%);
+			background: -o-linear-gradient(left, #ff0000 0%,#00ff00 100%);
+			background: -ms-linear-gradient(left, #ff0000 0%,#00ff00 100%);
+			background: linear-gradient(to right, #ff0000 0%,#00ff00 100%);
+		}
+
+		.labSample {
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAABCAIAAAAw6DswAAADL3pUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjarZVhktsgDIX/c4oeAUkIieOAgZneoMfvA7NJk912pp2axAZZCPE+wGH8+D7DN1wUKYek5rnkHHGlkgpXVDze1/2kmPZ9X3xeof1iDx8VeFAUPOVu5nH8K+z67GDp2NurPdh14vgJ9BH4BJQ18krj+PkJJHzb6bRDOf1q+mU655+vuKdM/WT51k4GMboinnDgISQR97RGEWQgLhXPsu8Kp7vOYtvCX2sXHtU38R6Cv2kX6/GQVynCnezK+02jYyf9Wrut0K8Z0UeVX18MepJ+127O7nOOe3Y1ZSiVw5lUPCF2DY4NUsrullEMf0XddikojileINZBs6FcgQox1J6UqFOlSWM/L7qQYuLBhifzxbJtLsaFrw0lrUKTDTB6ACOWC9QEZn7kQnvcsse7yDFyJ3gyIRihx6cSvjL+S3kEmnMtXaIjKN2AeQmONBa5dYcXgNA8murWd5fnXntei5eAoG6ZHROssd0hmtJzbcnmLPDTmEK8twZZPwEgEcZWJEMCAjGTKGWKxmxE0NHBpyJzlsQNBEiVO4UJNiIZcJzX2OhjtH1Z+TbjaAEIlYxN4mu7AFZKivVjybGGqoqmoKpZTV2L1iw5Zc05W15nVDWxZGrZzNyKVRdPrp7d3L14LVwER5iWXCwUL6XUikErQlf0rvCotXGTlpq23Kx5K61eWD5XuvTKl11+lat27tKx/XvuFrr30uuggaU00tCRhw0fZdSJtTZlpqkzT5s+y6wPaofqKzV6I/dnanSoLWJp+9mTGsxmHyFoHSe6mIEYJwJxWwSwoHkxi04p8SK3mMXC2BTKoEa64HRaxEAwDWKd9GD3JPdHbkHTX3Hj35ELC93/IBcWukPuM7cvqPW6vyiyAa1duDSNMnGwDYzek5LOUroOt5FnatVntU74fkqTLjXzapCy4VuilR0/adhHMCaNBo0STsv1Io7qrrzssjpKLssd0YmIS1thIO6VcpeMFxVZu/eaVw8NvPscv2wI6wNaIUSDzLvFq9WVuuEwXXpXbtlLL5Frz3fa0EhW4tBrYv74Woaf5VfSQcz4fdwAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfiCQUIGwLkvXlkAAAAU0lEQVQI1wXBUQqAIBBAwRfumkgQRHSF7n+m/oJ+ojDdFZoZdt/Wfi7O3Jmc7GQnOclIndGIxuioEY1oqKENNaShDa1IRSr6IQUphBd9CDdyIQc/kLohHVjqgA8AAAAASUVORK5CYII=');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	</style>
+	<script>
+		if (location.hash == "") {
+			location.hash = "#Home";
+		}
+
+		window.onhashchange = function () {
+			var newElement = document.getElementById(window.location.hash.substring(1));
+			if (newElement != null) {
+				newElement.nodeValue
+				newElement.scrollTop = 0;
+			}
+		}
+	</script>
+</head>
+
+<body class="page">
+
+<article id="AssetIcons_AssetIconAttribute">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetIconAttribute</h1>
+
+            <h2>Summary</h2>
+<p>Used to specify that this member controls the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>'s assets' icon.</p>
+            <h2>Example</h2>
+<p>In this example, we are using AssetIcons to draw a simple <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite">Sprite</a></code> on a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>.</p><code><span class="keyword">using</span> AssetIcons;
+<span class="keyword">using</span> UnityEngine;
+
+[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#Item">Item</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
+{
+	[<span class="method"><a href="#AssetIcons_AssetIconAttribute_AssetIconAttribute(string_ string_ string_ string_ int_ AssetIcons_IconAnchor_ AssetIcons_IconAspect_ string_ string_ int_ UnityEngine_FontStyle_ AssetIcons_IconAnchor_ AssetIcons_IconProjection_ int_ string)">AssetIcon</a></span>]
+	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="field">Icon</span>;
+}</code><p>We can also use CSS styling to modify the graphics drawn by this attribute. In this example we are going to remove the max size limit on icons and tint it purple.</p><code><span class="keyword">using</span> AssetIcons;
+<span class="keyword">using</span> UnityEngine;
+
+[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#Item">Item</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
+{
+	[<span class="type"><a href="#Item">AssetIcon</a></span>(<span class="type"><a href="#Item">IconStyle</a></span>.<span class="type"><a href="#Item">MaxSize</a></span>.<span class="type"><a href="#Item">None</a></span> + <span class="string">"Color: #ff99cc"</span>)]
+	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="field">Icon</span>;
+}</code><p>This attribute can also be placed on methods and properties.</p><code><span class="keyword">using</span> AssetIcons;
+<span class="keyword">using</span> UnityEngine;
+
+[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#Item">Item</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
+{
+	[<span class="property">AssetIcon</span>(<span class="property">IconStyle</span>.<span class="property">MaxSize</span>.<span class="property">None</span> + <span class="property">IconStyle</span>.<span class="property">Layer</span>.<span class="property">Above</span>)]
+	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="property">Icon</span> { <span class="method"><a href="#Item_Icon_get">get</a></span>; }
+	
+	[<span class="method"><a href="#Item_GenerateBackground()">AssetIcon</a></span>(<span class="method"><a href="#Item_GenerateBackground()">IconStyle</a></span>.<span class="method"><a href="#Item_GenerateBackground()">MaxSize</a></span>.<span class="method"><a href="#Item_GenerateBackground()">None</a></span> + <span class="method"><a href="#Item_GenerateBackground()">IconStyle</a></span>.<span class="method"><a href="#Item_GenerateBackground()">Layer</a></span>.<span class="method"><a href="#Item_GenerateBackground()">Below</a></span>)]
+	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="method"><a href="#Item_GenerateBackground()">GenerateBackground</a></span>()
+	{
+		<span class="keyword">return</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span>.<span class="property">black</span>;
+	}
+}</code>
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_AssetIconAttribute_Style">Style</a></code></td>
+                        <td>A style defined in the constructor of the AssetIconAttribute.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_AssetIconAttribute_FilePath">FilePath</a></code></td>
+                        <td>The local file path where this attribute is implemented.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_AssetIconAttribute_LineNumber">LineNumber</a></code></td>
+                        <td>The line number where this attribute implemented.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+            <h2>Remarks</h2>
+<p>This attribute can be placed on:</p><ul><li>Fields</li><li>Properties</li><li>Methods (only parameterless ones)</li></ul>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_AssetIconAttribute_Style">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Style</h1>
+
+            <h2>Summary</h2>
+<p>A style defined in the constructor of the <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_AssetIconAttribute_FilePath">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>FilePath</h1>
+
+            <h2>Summary</h2>
+<p>The local file path where this attribute is implemented.</p>
+
+            <h2>Remarks</h2>
+<p>This field only has a value in the editor and will return <code>null</code> outside of the editor.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_AssetIconAttribute_LineNumber">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>LineNumber</h1>
+
+            <h2>Summary</h2>
+<p>The line number where this attribute implemented.</p>
+
+            <h2>Remarks</h2>
+<p>This field only has a value in the editor and will return <code>-1</code> outside of the editor.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>IconAnchor</h1>
+
+            <h2>Summary</h2>
+<p>When changing the height, the anchor will change how much each side of the rect will change.</p>
+
+
+
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_Center">Center</a></code></td>
+                        <td>Anchored in the center of the graphic. This field has a constant value of <code>0</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_Top">Top</a></code></td>
+                        <td>Anchored to the top of the graphic. This field has a constant value of <code>1</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_Bottom">Bottom</a></code></td>
+                        <td>Anchored to the bottom of the graphic. This field has a constant value of <code>2</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_Left">Left</a></code></td>
+                        <td>Anchored to the left of the graphic. This field has a constant value of <code>3</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_Right">Right</a></code></td>
+                        <td>Anchored to the right of the graphic. This field has a constant value of <code>4</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_TopLeft">TopLeft</a></code></td>
+                        <td>Anchored to the top-left of the graphic. This field has a constant value of <code>5</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_TopRight">TopRight</a></code></td>
+                        <td>Anchored to the top-right of the graphic. This field has a constant value of <code>6</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_BottomLeft">BottomLeft</a></code></td>
+                        <td>Anchored to the bottom-left of the graphic. This field has a constant value of <code>7</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAnchor_BottomRight">BottomRight</a></code></td>
+                        <td>Anchored to the bottom-right of the graphic. This field has a constant value of <code>8</code></td>
+                    </tr>
+            </table>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_Center">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Center</h1>
+
+            <h2>Summary</h2>
+<p>Anchored in the center of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_Top">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Top</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the top of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_Bottom">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Bottom</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the bottom of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_Left">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Left</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the left of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_Right">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Right</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the right of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_TopLeft">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TopLeft</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the top-left of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_TopRight">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TopRight</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the top-right of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_BottomLeft">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>BottomLeft</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the bottom-left of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAnchor_BottomRight">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>BottomRight</h1>
+
+            <h2>Summary</h2>
+<p>Anchored to the bottom-right of the graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAspect">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>IconAspect</h1>
+
+            <h2>Summary</h2>
+<p>An enum that represents how the aspect ratio of a graphic should be used.</p>
+
+
+
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAspect_Fit">Fit</a></code></td>
+                        <td>The rendered graphic should fit inside the Rect without any stretching. This field has a constant value of <code>0</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAspect_Envelop">Envelop</a></code></td>
+                        <td>The rendered graphic should envelop the Rect without any stretching. This field has a constant value of <code>1</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconAspect_Stretch">Stretch</a></code></td>
+                        <td>The rendered graphic will stretch to the Rect dimensions. This field has a constant value of <code>2</code></td>
+                    </tr>
+            </table>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAspect_Fit">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Fit</h1>
+
+            <h2>Summary</h2>
+<p>The rendered graphic should fit inside the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect">Rect</a></code> without any stretching.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAspect_Envelop">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Envelop</h1>
+
+            <h2>Summary</h2>
+<p>The rendered graphic should envelop the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect">Rect</a></code> without any stretching.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconAspect_Stretch">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Stretch</h1>
+
+            <h2>Summary</h2>
+<p>The rendered graphic will stretch to the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect">Rect</a></code> dimensions.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>IconColor</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic a color.</p>
+
+
+
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Transparent">Transparent</a></code></td>
+                        <td>Makes the drawn graphic transparent. This field has a constant value of <code>#ffffff00</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Black">Black</a></code></td>
+                        <td>Tints the drawn graphic black. This field has a constant value of <code>#555555</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Gray">Gray</a></code></td>
+                        <td>Tints the drawn graphic gray. This field has a constant value of <code>#888888</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Grey">Grey</a></code></td>
+                        <td>Tints the drawn graphic gray. Alternative British spelling of gray. This field has a constant value of <code>#888888</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_White">White</a></code></td>
+                        <td>No tinting. This field has a constant value of <code>#ffffff</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Blue">Blue</a></code></td>
+                        <td>Tints the drawn graphic blue. This field has a constant value of <code>#446fc2</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Cyan">Cyan</a></code></td>
+                        <td>Tints the drawn graphic cyan. This field has a constant value of <code>#4c88ad</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Green">Green</a></code></td>
+                        <td>Tints the drawn graphic green. This field has a constant value of <code>#4cad4f</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Yellow">Yellow</a></code></td>
+                        <td>Tints the drawn graphic yellow. This field has a constant value of <code>#e3d96b</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Orange">Orange</a></code></td>
+                        <td>Tints the drawn graphic orange. This field has a constant value of <code>#de9a47</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Red">Red</a></code></td>
+                        <td>Tints the drawn graphic red. This field has a constant value of <code>#de5147</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Purple">Purple</a></code></td>
+                        <td>Tints the drawn graphic purple. This field has a constant value of <code>#8b47de</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconColor_Magenta">Magenta</a></code></td>
+                        <td>Tints the drawn graphic magenta. This field has a constant value of <code>#bd48bb</code></td>
+                    </tr>
+            </table>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Transparent">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Transparent</h1>
+
+            <h2>Summary</h2>
+<p>Makes the drawn graphic transparent.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Black">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Black</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic black.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Gray">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Gray</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic gray.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Grey">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Grey</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic gray. Alternative British spelling of gray.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_White">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>White</h1>
+
+            <h2>Summary</h2>
+<p>No tinting.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Blue">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Blue</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic blue.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Cyan">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Cyan</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic cyan.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Green">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Green</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic green.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Yellow">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Yellow</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic yellow.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Orange">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Orange</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic orange.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Red">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Red</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic red.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Purple">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Purple</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic purple.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconColor_Magenta">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Magenta</h1>
+
+            <h2>Summary</h2>
+<p>Tints the drawn graphic magenta.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconProjection">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>IconProjection</h1>
+
+            <h2>Summary</h2>
+<p>An enum that represents camera projections when rendering Prefabs.</p>
+
+
+
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconProjection_Perspective">Perspective</a></code></td>
+                        <td>Represents a perspective camera projection. This field has a constant value of <code>0</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_IconProjection_Orthographic">Orthographic</a></code></td>
+                        <td>Represents an orthographic camera projection. This field has a constant value of <code>1</code></td>
+                    </tr>
+            </table>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconProjection_Perspective">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Perspective</h1>
+
+            <h2>Summary</h2>
+<p>Represents a perspective camera projection.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_IconProjection_Orthographic">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Orthographic</h1>
+
+            <h2>Summary</h2>
+<p>Represents an orthographic camera projection.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_ProductInformation">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>ProductInformation</h1>
+
+            <h2>Summary</h2>
+<p>Provides global access to standard information about AssetIcons.</p>
+
+
+
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_ProductInformation_Name">Name</a></code></td>
+                        <td>The current version of this asset. This field has a constant value of <code>AssetIcons</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_ProductInformation_Version">Version</a></code></td>
+                        <td>The current version of this asset. This field has a constant value of <code>2.0.0</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_ProductInformation_Description">Description</a></code></td>
+                        <td>A brief description of this asset. This field has a constant value of <code>Extension for Unity that draws custom icons inside Unity.</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_ProductInformation_Author">Author</a></code></td>
+                        <td>The author of this asset. This field has a constant value of <code>Anthony Marmont</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_ProductInformation_Copyright">Copyright</a></code></td>
+                        <td>A copyright notice for this asset. This field has a constant value of <code>Copyright © Anthony Marmont 2019</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_ProductInformation_IssueTracker">IssueTracker</a></code></td>
+                        <td>A link to the issue tracker for this product. This field has a constant value of <code>https://github.com/Fydar/AssetIcons/issues</code></td>
+                    </tr>
+            </table>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_ProductInformation_Name">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Name</h1>
+
+            <h2>Summary</h2>
+<p>The current version of this asset.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_ProductInformation_Version">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Version</h1>
+
+            <h2>Summary</h2>
+<p>The current version of this asset.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_ProductInformation_Description">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Description</h1>
+
+            <h2>Summary</h2>
+<p>A brief description of this asset.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_ProductInformation_Author">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Author</h1>
+
+            <h2>Summary</h2>
+<p>The author of this asset.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_ProductInformation_Copyright">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Copyright</h1>
+
+            <h2>Summary</h2>
+<p>A copyright notice for this asset.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_ProductInformation_IssueTracker">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>IssueTracker</h1>
+
+            <h2>Summary</h2>
+<p>A link to the issue tracker for this product.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>StyleDefinition</h1>
+
+            <h2>Summary</h2>
+<p>A model that represents the styles defined in the <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> constructor.</p>
+
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Width">Width</a></code></td>
+                        <td>An expression that's evaluated to determine the width of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Height">Height</a></code></td>
+                        <td>An expression that's evaluated to determine the height of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_X">X</a></code></td>
+                        <td>An expression that's evaluated to determine a horizontal offset of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Y">Y</a></code></td>
+                        <td>An expression that's evaluated to determine a vertical offset of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_MaxSize">MaxSize</a></code></td>
+                        <td>A value used to determine the max size of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Anchor">Anchor</a></code></td>
+                        <td>An anchor that all difference in scale is orientated around.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Aspect">Aspect</a></code></td>
+                        <td>A value used to determine the aspect of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Display">Display</a></code></td>
+                        <td>An expression that's evaluated to whether the icon should be displayed.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Tint">Tint</a></code></td>
+                        <td>A tint to apply to the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Layer">Layer</a></code></td>
+                        <td>A value used to determine the layer of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_FontStyle">FontStyle</a></code></td>
+                        <td>A font style to use on all rendered text.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_TextAnchor">TextAnchor</a></code></td>
+                        <td>An anchor for all rendered text.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_StyleDefinition_Projection">Projection</a></code></td>
+                        <td>A camera projection for all rendered Prefabs.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Width">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Width</h1>
+
+            <h2>Summary</h2>
+<p>An expression that's evaluated to determine the width of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Height">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Height</h1>
+
+            <h2>Summary</h2>
+<p>An expression that's evaluated to determine the height of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_X">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>X</h1>
+
+            <h2>Summary</h2>
+<p>An expression that's evaluated to determine a horizontal offset of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Y">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Y</h1>
+
+            <h2>Summary</h2>
+<p>An expression that's evaluated to determine a vertical offset of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_MaxSize">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>MaxSize</h1>
+
+            <h2>Summary</h2>
+<p>A value used to determine the max size of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Anchor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Anchor</h1>
+
+            <h2>Summary</h2>
+<p>An anchor that all difference in scale is orientated around.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Aspect">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Aspect</h1>
+
+            <h2>Summary</h2>
+<p>A value used to determine the aspect of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Display">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Display</h1>
+
+            <h2>Summary</h2>
+<p>An expression that's evaluated to whether the icon should be displayed.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Tint">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Tint</h1>
+
+            <h2>Summary</h2>
+<p>A tint to apply to the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Layer">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Layer</h1>
+
+            <h2>Summary</h2>
+<p>A value used to determine the layer of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_FontStyle">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>FontStyle</h1>
+
+            <h2>Summary</h2>
+<p>A font style to use on all rendered text.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_TextAnchor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TextAnchor</h1>
+
+            <h2>Summary</h2>
+<p>An anchor for all rendered text.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_StyleDefinition_Projection">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Projection</h1>
+
+            <h2>Summary</h2>
+<p>A camera projection for all rendered Prefabs.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_Item">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Item</h1>
+
+            <h2>Summary</h2>
+<p>A sample <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code> that draws a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/SpringJoint">SpringJoint</a></code> icon.</p>
+
+            <h2>Instance Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Demo_Item_Icon">Icon</a></code></td>
+                        <td>An icon to render the for this ScriptableObject. </td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_Item_Icon">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Icon</h1>
+
+            <h2>Summary</h2>
+<p>An icon to render the for this <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_Prop">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Prop</h1>
+
+            <h2>Summary</h2>
+<p>A sample <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code> that draws a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite">Sprite</a></code> icon and a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code> background.</p>
+
+            <h2>Instance Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Demo_Prop_Icon">Icon</a></code></td>
+                        <td>An icon to render the for this ScriptableObject. </td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Demo_Prop_Border">Border</a></code></td>
+                        <td>An icon to render the for this ScriptableObject's background. </td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_Prop_Icon">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Icon</h1>
+
+            <h2>Summary</h2>
+<p>An icon to render the for this <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_Prop_Border">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Border</h1>
+
+            <h2>Summary</h2>
+<p>An icon to render the for this <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>'s background.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_VoxelItem">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>VoxelItem</h1>
+
+            <h2>Summary</h2>
+<p>A sample <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code> that draws a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code> icon.</p>
+
+            <h2>Instance Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Demo_VoxelItem_Icon">Icon</a></code></td>
+                        <td>A GameObject rendered in the center of this ScriptableObject. </td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Demo_VoxelItem_Background">Background</a></code></td>
+                        <td>A Sprite rendered across the whole ScriptableObject. </td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Demo_VoxelItem_ItemColor">ItemColor</a></code></td>
+                        <td>A Color rendered in the corner of the ScriptableObject. </td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Demo_VoxelItem_CraftsInto">CraftsInto</a></code></td>
+                        <td>A reference to another VoxelItem used for testing Object Selector support. </td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_VoxelItem_Icon">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Icon</h1>
+
+            <h2>Summary</h2>
+<p>A <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/GameObject">GameObject</a></code> rendered in the center of this <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_VoxelItem_Background">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Background</h1>
+
+            <h2>Summary</h2>
+<p>A <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite">Sprite</a></code> rendered across the whole <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_VoxelItem_ItemColor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>ItemColor</h1>
+
+            <h2>Summary</h2>
+<p>A <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color">Color</a></code> rendered in the corner of the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Demo_VoxelItem_CraftsInto">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>CraftsInto</h1>
+
+            <h2>Summary</h2>
+<p>A reference to another <code><a href="#AssetIcons_Demo_VoxelItem">VoxelItem</a></code> used for testing Object Selector support.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetIconDrawer</h1>
+
+            <h2>Summary</h2>
+<p>Handles the drawing, sizing and tinting of the assets.</p>
+
+
+
+
+
+
+            <h2>Static Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_BackgroundColor">BackgroundColor</a></code></td>
+                        <td>A Color that imitates Unity's project window background.</td>
+                    </tr>
+            </table>
+
+            <h2>Static Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawBackground">DrawBackground</a></code></td>
+                        <td>Draws an empty background using AssetIcons.Editors.AssetIconDrawer.BackgroundColor to hide Unity's original icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawColor">DrawColor</a></code></td>
+                        <td>Draw a flat Color.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawObject">DrawObject</a></code></td>
+                        <td>Attempts to draw an icon for an object.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawSprite">DrawSprite</a></code></td>
+                        <td>Draws a sprite graphic at a specified rect.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawText">DrawText</a></code></td>
+                        <td>Draws text at a specified rect.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawTexture">DrawTexture</a></code></td>
+                        <td>Draws a texture graphic at a specified rect.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawTexWithCoords">DrawTexWithCoords</a></code></td>
+                        <td>Draws a portion of a texture at a specified rect.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawTexWithUVCoords">DrawTexWithUVCoords</a></code></td>
+                        <td>Draws a portion of a texture at a specified rect.</td>
+                    </tr>
+            </table>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_BackgroundColor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>BackgroundColor</h1>
+
+            <h2>Summary</h2>
+<p>A <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color">Color</a></code> that imitates Unity's project window background.</p>
+
+            <h2>Remarks</h2>
+<p>This <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color">Color</a></code> is used for masking the icon that Unity draws. </p><p>This changes with Untiy's pro-skin across differnet versions of Unity.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawBackground">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawBackground</h1>
+
+            <h2>Summary</h2>
+<p>Draws an empty background using <code>AssetIcons.Editors.AssetIconDrawer.BackgroundColor</code> to hide Unity's original icon.</p>
+
+            <h2>Remarks</h2>
+<p>This <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color">Color</a></code> is used for masking the icon that Unity draws. </p><p>This changes with Untiy's pro-skin across differnet versions of Unity.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawColor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawColor</h1>
+
+            <h2>Summary</h2>
+<p>Draw a flat <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color">Color</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawObject">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawObject</h1>
+
+            <h2>Summary</h2>
+<p>Attempts to draw an icon for an object.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawSprite">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawSprite</h1>
+
+            <h2>Summary</h2>
+<p>Draws a sprite graphic at a specified rect.</p>
+
+            <h2>Remarks</h2>
+<p>This implementation draws a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code> and crops the boundaries. This may result in
+sprites that are tightly packed to draw artifacts.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawText">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawText</h1>
+
+            <h2>Summary</h2>
+<p>Draws text at a specified rect.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawTexture">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawTexture</h1>
+
+            <h2>Summary</h2>
+<p>Draws a texture graphic at a specified rect.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawTexWithCoords">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawTexWithCoords</h1>
+
+            <h2>Summary</h2>
+<p>Draws a portion of a texture at a specified rect.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconDrawer_DrawTexWithUVCoords">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawTexWithUVCoords</h1>
+
+            <h2>Summary</h2>
+<p>Draws a portion of a texture at a specified rect.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconProjectHooks">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetIconProjectHooks</h1>
+
+            <h2>Summary</h2>
+<p>AssetIcons uses this to manage the rendering callbacks.</p>
+
+
+
+
+
+
+
+            <h2>Static Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+            </table>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconProjectHooks_add_OnDrawIcon">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>add_OnDrawIcon</h1>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconProjectHooks_remove_OnDrawIcon">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>remove_OnDrawIcon</h1>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconRenderer">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetIconRenderer</h1>
+
+            <h2>Summary</h2>
+<p>Used by AssetIcons to render prefabs to a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code>.</p>
+
+
+
+
+
+
+
+            <h2>Static Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconRenderer_RenderModel">RenderModel</a></code></td>
+                        <td>Creates a preview Texture2D of a model.</td>
+                    </tr>
+            </table>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconRenderer_RenderModel">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>RenderModel</h1>
+
+            <h2>Summary</h2>
+<p>Creates a preview <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code> of a model.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetIconsPreferences</h1>
+
+            <h2>Summary</h2>
+<p>Stores AssetIcons preferences information in <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorPrefs">EditorPrefs</a></code>.</p>
+            <h2>Example</h2>
+<p>You can interact with AssetIcons preferences via an editor scripting API.</p><code><span class="keyword">using</span> AssetIcons.Editors;
+<span class="keyword">using</span> UnityEditor;
+
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#DemoWindow">DemoWindow</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">EditorWindow</a></span>
+{
+	[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/MenuItem.MenuItem.html">MenuItem</a></span> (<span class="string">"AssetIcons/Demo Window"</span>)]
+	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_Init()">Init</a></span> ()
+	{
+		<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">var</a></span> <span class="local">window</span> = <span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.GetWindow.html">GetWindow</a></span>(<span class="keyword">typeof</span>(<span class="type"><a href="#DemoWindow">DemoWindow</a></span>), <span class="keyword">false</span>, <span class="string">"Demo Window"</span>);
+		<span class="local">window</span>.<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.Show.html">Show</a></span> ();
+	}
+
+	<span class="keyword">private</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_OnGUI()">OnGUI</a></span> ()
+	{
+		<span class="type"><a href="#AssetIcons_Editors_AssetIconsPreferences">AssetIconsPreferences</a></span>.<span class="property">Enabled</span>.<span class="property">Value</span> = <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorGUILayout.html">EditorGUILayout</a></span>.<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorGUILayout.Toggle.html">Toggle</a></span> (<span class="string">"AssetIcons Enabled"</span>, <span class="type"><a href="#AssetIcons_Editors_AssetIconsPreferences">AssetIconsPreferences</a></span>.<span class="property">Enabled</span>.<span class="property">Value</span>);
+	}
+}</code>
+
+
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_EditorPrefsKey">EditorPrefsKey</a></code></td>
+                        <td>The EditorPrefs key used to store this users preferences. This field has a constant value of <code>AssetIcons_Preferences</code></td>
+                    </tr>
+            </table>
+
+            <h2>Static Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_CurrentPreferences">CurrentPreferences</a></code></td>
+                        <td>The current set of preferences used by AssetIcons.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_DrawGUIStyles">DrawGUIStyles</a></code></td>
+                        <td>A shorthand for CurrentPreferences.DrawGUIStyles.Enables previewing of Unity GUIStyle assets.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_Enabled">Enabled</a></code></td>
+                        <td>A shorthand for CurrentPreferences.Enabled.Controls whether AssetIcons should be enabled or disabled.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_PrefabResolution">PrefabResolution</a></code></td>
+                        <td>A shorthand for CurrentPreferences.PrefabResolution.Allows for adjusting the resolution AssetIcons will render prefabs with.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_SelectionTint">SelectionTint</a></code></td>
+                        <td>A shorthand for CurrentPreferences.SelectionTint.Controls how strong of a tint is applied to AssetIcons rendered graphics when selected.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_TypeIcons">TypeIcons</a></code></td>
+                        <td>A shorthand for CurrentPreferences.TypeIcons.A collection of Graphics associated with file extensions that AssetIcons uses to render custom
+file icons.</td>
+                    </tr>
+            </table>
+
+
+            <h2>Remarks</h2>
+<p>These preferences are effective on a single machine and in a single Unity project. Changing to another project with AssetIcons 
+installed will not preserve these saved preferences.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences_EditorPrefsKey">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>EditorPrefsKey</h1>
+
+            <h2>Summary</h2>
+<p>The <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorPrefs">EditorPrefs</a></code> key used to store this users preferences.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences_CurrentPreferences">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>CurrentPreferences</h1>
+
+            <h2>Summary</h2>
+<p>The current set of preferences used by AssetIcons.</p>
+            <h2>Example</h2>
+<p>You can interact with AssetIcons preferences via an editor scripting API.</p><code><span class="keyword">using</span> AssetIcons.Editors;
+<span class="keyword">using</span> UnityEditor;
+
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#DemoWindow">DemoWindow</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">EditorWindow</a></span>
+{
+	[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/MenuItem.MenuItem.html">MenuItem</a></span> (<span class="string">"AssetIcons/Demo Window"</span>)]
+	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_Init()">Init</a></span> ()
+	{
+		<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">var</a></span> <span class="local">window</span> = <span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.GetWindow.html">GetWindow</a></span>(<span class="keyword">typeof</span>(<span class="type"><a href="#DemoWindow">DemoWindow</a></span>), <span class="keyword">false</span>, <span class="string">"Demo Window"</span>);
+		<span class="local">window</span>.<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.Show.html">Show</a></span> ();
+	}
+
+	<span class="keyword">private</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_OnGUI()">OnGUI</a></span> ()
+	{
+		<span class="type"><a href="#AssetIcons_Editors_Preferences_PreferencesPreset">var</a></span> <span class="local">preferences</span> = <span class="type"><a href="#AssetIcons_Editors_AssetIconsPreferences">AssetIconsPreferences</a></span>.<span class="property">CurrentPreferences</span>;
+
+		<span class="local">preferences</span>.<span class="property">Enabled</span>.<span class="property">Value</span> = <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorGUILayout.html">EditorGUILayout</a></span>.<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorGUILayout.Toggle.html">Toggle</a></span> (<span class="string">"AssetIcons Enabled"</span>, <span class="local">preferences</span>.<span class="property">Enabled</span>.<span class="property">Value</span>);
+	}
+}</code>
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences_DrawGUIStyles">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawGUIStyles</h1>
+
+            <h2>Summary</h2>
+<p>A shorthand for <code>CurrentPreferences.DrawGUIStyles</code>.</p><p>Enables previewing of Unity <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/GUIStyle">GUIStyle</a></code> assets.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences_Enabled">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Enabled</h1>
+
+            <h2>Summary</h2>
+<p>A shorthand for <code>CurrentPreferences.Enabled</code>.</p><p>Controls whether AssetIcons should be enabled or disabled.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences_PrefabResolution">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>PrefabResolution</h1>
+
+            <h2>Summary</h2>
+<p>A shorthand for <code>CurrentPreferences.PrefabResolution</code>.</p><p>Allows for adjusting the resolution AssetIcons will render prefabs with.</p>
+
+            <h2>Remarks</h2>
+<p>If you are struggling with performance with a large amount of rendered assets, you could try
+adjusting this to boost performance.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences_SelectionTint">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>SelectionTint</h1>
+
+            <h2>Summary</h2>
+<p>A shorthand for <code>CurrentPreferences.SelectionTint</code>.</p><p>Controls how strong of a tint is applied to AssetIcons rendered graphics when selected.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_AssetIconsPreferences_TypeIcons">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TypeIcons</h1>
+
+            <h2>Summary</h2>
+<p>A shorthand for <code>CurrentPreferences.TypeIcons</code>.</p><p>A collection of Graphics associated with file extensions that AssetIcons uses to render custom
+file icons.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>CameraSetup</h1>
+
+            <h2>Summary</h2>
+<p>A camera setup used in <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></code> to render a prefab.</p>
+
+            <h2>Instance Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CameraSetup_Padding">Padding</a></code></td>
+                        <td>Padding around the edges of a rendered prefab. This field has a default value of <code>0</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CameraSetup_PreviewDirection">PreviewDirection</a></code></td>
+                        <td>The vector direction to render a prefab from. This field has a default value of <code>(0.0, 0.0, 0.0)</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CameraSetup_TransparentBackground">TransparentBackground</a></code></td>
+                        <td>Indicates whether the background should be rendered as transparent. This field has a default value of <code>False</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CameraSetup_BackgroundColor">BackgroundColor</a></code></td>
+                        <td>The background color of the rendered graphic. This field has a default value of <code>RGBA(0.000, 0.000, 0.000, 0.000)</code></td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CameraSetup_Orthographic">Orthographic</a></code></td>
+                        <td>Indicates whether projection should be orthographic. This field has a default value of <code>False</code></td>
+                    </tr>
+            </table>
+
+
+            <h2>Instance Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CameraSetup_ApplyToCamera">ApplyToCamera</a></code></td>
+                        <td>Applies this CameraSetup to a Unity Camera.</td>
+                    </tr>
+            </table>
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CameraSetup_Default">Default</a></code></td>
+                        <td>A set of default settings to render a prefab with. </td>
+                    </tr>
+            </table>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup_Padding">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Padding</h1>
+
+            <h2>Summary</h2>
+<p>Padding around the edges of a rendered prefab.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup_PreviewDirection">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>PreviewDirection</h1>
+
+            <h2>Summary</h2>
+<p>The vector direction to render a prefab from.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup_TransparentBackground">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TransparentBackground</h1>
+
+            <h2>Summary</h2>
+<p>Indicates whether the background should be rendered as transparent.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup_BackgroundColor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>BackgroundColor</h1>
+
+            <h2>Summary</h2>
+<p>The background color of the rendered graphic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup_Orthographic">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Orthographic</h1>
+
+            <h2>Summary</h2>
+<p>Indicates whether projection should be orthographic.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup_ApplyToCamera">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>ApplyToCamera</h1>
+
+            <h2>Summary</h2>
+<p>Applies this <code><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a></code> to a Unity <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Camera">Camera</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CameraSetup_Default">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Default</h1>
+
+            <h2>Summary</h2>
+<p>A set of default settings to render a prefab with.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>CompiledStyleDefinition</h1>
+
+            <h2>Summary</h2>
+<p></p>
+
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_MaxSize">MaxSize</a></code></td>
+                        <td>A value used to determine the max size of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_Aspect">Aspect</a></code></td>
+                        <td>A value used to determine the aspect of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_Anchor">Anchor</a></code></td>
+                        <td>An anchor that all difference in scale is orientated around.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_Tint">Tint</a></code></td>
+                        <td>A tint to apply to the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_Layer">Layer</a></code></td>
+                        <td>A value used to determine the layer of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_FontStyle">FontStyle</a></code></td>
+                        <td>A font style to use on all rendered text.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_TextAnchor">TextAnchor</a></code></td>
+                        <td>An anchor for all rendered text.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_Projection">Projection</a></code></td>
+                        <td>A camera projection for all rendered Prefabs.</td>
+                    </tr>
+            </table>
+
+            <h2>Instance Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+            </table>
+
+
+            <h2>Static Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_CompiledStyleDefinition_Default">Default</a></code></td>
+                        <td>A CompiledStyleDefinition for the default constructor of StyleDefinition. </td>
+                    </tr>
+            </table>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_MaxSize">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>MaxSize</h1>
+
+            <h2>Summary</h2>
+<p>A value used to determine the max size of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_Aspect">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Aspect</h1>
+
+            <h2>Summary</h2>
+<p>A value used to determine the aspect of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_Anchor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Anchor</h1>
+
+            <h2>Summary</h2>
+<p>An anchor that all difference in scale is orientated around.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_Tint">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Tint</h1>
+
+            <h2>Summary</h2>
+<p>A tint to apply to the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_Layer">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Layer</h1>
+
+            <h2>Summary</h2>
+<p>A value used to determine the layer of the icon.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_FontStyle">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>FontStyle</h1>
+
+            <h2>Summary</h2>
+<p>A font style to use on all rendered text.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_TextAnchor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TextAnchor</h1>
+
+            <h2>Summary</h2>
+<p>An anchor for all rendered text.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_Projection">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Projection</h1>
+
+            <h2>Summary</h2>
+<p>A camera projection for all rendered Prefabs.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_Filter">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Filter</h1>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_CompiledStyleDefinition_Default">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Default</h1>
+
+            <h2>Summary</h2>
+<p>A <code><a href="#AssetIcons_Editors_CompiledStyleDefinition">CompiledStyleDefinition</a></code> for the default constructor of <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_RenderCache">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>RenderCache</h1>
+
+            <h2>Summary</h2>
+<p>Cache renders of the models that we would like to render.</p>
+
+
+
+
+
+
+
+            <h2>Static Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_RenderCache_GetTexture">GetTexture</a></code></td>
+                        <td>Retrieves a Texture2D from the cache for a GameObject using a CameraSetup.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_RenderCache_ClearCache">ClearCache</a></code></td>
+                        <td>Clears all rendered textures from this cache.</td>
+                    </tr>
+            </table>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_RenderCache_GetTexture">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>GetTexture</h1>
+
+            <h2>Summary</h2>
+<p>Retrieves a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code> from the cache for a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/GameObject">GameObject</a></code> using a <code><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_RenderCache_ClearCache">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>ClearCache</h1>
+
+            <h2>Summary</h2>
+<p>Clears all rendered textures from this cache.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_AssetReference">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetReference</h1>
+
+            <h2>Summary</h2>
+<p>Used to reference assets inside the Unity project inside the editor.</p>
+
+            <h2>Instance Fields</h2>
+            <table>
+                <tr>
+                    <th width="185">Field</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_AssetReference_AssetPath">AssetPath</a></code></td>
+                        <td>A path, relative to the Unity project root, used to reference the asset. </td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_AssetReference_AssetName">AssetName</a></code></td>
+                        <td>The UnityEngine.Object.name of the asset. </td>
+                    </tr>
+            </table>
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_AssetReference_ObjectReference">ObjectReference</a></code></td>
+                        <td>Load or assign assets from the AssetDatabase.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+            <h2>Static Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_AssetReference_GetFromPath">GetFromPath</a></code></td>
+                        <td></td>
+                    </tr>
+            </table>
+
+            <h2>Remarks</h2>
+<p>This is used inside the <code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset">PreferencesPreset</a></code> to select assets to render an icon.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_AssetReference_AssetPath">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetPath</h1>
+
+            <h2>Summary</h2>
+<p>A path, relative to the Unity project root, used to reference the asset.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_AssetReference_AssetName">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>AssetName</h1>
+
+            <h2>Summary</h2>
+<p>The <code>UnityEngine.Object.name</code> of the asset.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_AssetReference_ObjectReference">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>ObjectReference</h1>
+
+            <h2>Summary</h2>
+<p>Load or assign assets from the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/AssetDatabase">AssetDatabase</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_AssetReference_GetFromPath">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>GetFromPath</h1>
+
+            <h2>Summary</h2>
+<p></p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_BoolEventField">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>BoolEventField</h1>
+
+            <h2>Summary</h2>
+<p>A concrete implementation of the <code><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></code> for <code>bool</code>.</p>
+
+
+
+
+
+
+
+
+            <h2>Remarks</h2>
+<p>This is nessesary for Unity to be able to serialize generic types.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_ColorTint">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>ColorTint</h1>
+
+            <h2>Summary</h2>
+<p>A data type used to tint graphics.</p>
+
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_ColorTint_TintColor">TintColor</a></code></td>
+                        <td>A color to tint rendered graphics.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_ColorTint_TintStrength">TintStrength</a></code></td>
+                        <td>The strength of the tint.</td>
+                    </tr>
+            </table>
+
+            <h2>Instance Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_ColorTint_Apply">Apply</a></code></td>
+                        <td>Applies the tint to a source color.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_ColorTint_TintColor">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TintColor</h1>
+
+            <h2>Summary</h2>
+<p>A color to tint rendered graphics.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_ColorTint_TintStrength">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TintStrength</h1>
+
+            <h2>Summary</h2>
+<p>The strength of the tint.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_ColorTint_Apply">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Apply</h1>
+
+            <h2>Summary</h2>
+<p>Applies the tint to a source color.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_ColorTintEventField">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>ColorTintEventField</h1>
+
+            <h2>Summary</h2>
+<p>A concrete implementation of the <code><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></code> for <code><a href="#AssetIcons_Editors_Preferences_ColorTint">ColorTint</a></code>.</p>
+
+
+
+
+
+
+
+
+            <h2>Remarks</h2>
+<p>This is nessesary for Unity to be able to serialize generic types.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_EventField">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>EventField</h1>
+
+            <h2>Summary</h2>
+<p>A base-class for the generic wrapper object that fires events whenever its value changes.</p>
+
+
+
+            <h2>Instance Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_EventField_InvokeChanged">InvokeChanged</a></code></td>
+                        <td></td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_EventField_add_OnChanged">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>add_OnChanged</h1>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_EventField_remove_OnChanged">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>remove_OnChanged</h1>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_EventField_InvokeChanged">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>InvokeChanged</h1>
+
+            <h2>Summary</h2>
+<p></p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_EventField__">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>EventField&lt;T&gt;</h1>
+
+            <h2>Summary</h2>
+<p>A generic wrapper object that fires events whenever its value changes.</p>
+
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_EventField_T__Value">Value</a></code></td>
+                        <td>The value that this wrapper currently represents.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_EventField_T__Value">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Value</h1>
+
+            <h2>Summary</h2>
+<p>The value that this wrapper currently represents.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_FromValuesAttribute">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>FromValuesAttribute</h1>
+
+            <h2>Summary</h2>
+<p>A Unity <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/PropertyAttribute">PropertyAttribute</a></code> that exposes a selection of values.</p>
+
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_FromValuesAttribute_Names">Names</a></code></td>
+                        <td>The names of all of the values that this property allows.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_FromValuesAttribute_Values">Values</a></code></td>
+                        <td>The values that this property allows.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_FromValuesAttribute_Names">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Names</h1>
+
+            <h2>Summary</h2>
+<p>The names of all of the values that this property allows.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_FromValuesAttribute_Values">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Values</h1>
+
+            <h2>Summary</h2>
+<p>The values that this property allows.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_IconMapping">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>IconMapping</h1>
+
+            <h2>Summary</h2>
+<p>An implementation of the <code><a href="#AssetIcons_Editors_Preferences_KeyValueTable">KeyValueTable</a></code>.</p>
+
+
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_IntEventField">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>IntEventField</h1>
+
+            <h2>Summary</h2>
+<p>A concrete implementation of the <code><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></code> for <code>int</code>.</p>
+
+
+
+
+
+
+
+
+            <h2>Remarks</h2>
+<p>This is nessesary for Unity to be able to serialize generic types.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueEventTable___">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>KeyValueEventTable&lt;TKey,TValue&gt;</h1>
+
+            <h2>Summary</h2>
+<p></p>
+
+
+
+            <h2>Instance Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Add">Add</a></code></td>
+                        <td>Add a key and a value to the KeyValueTable.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Clear">Clear</a></code></td>
+                        <td>Clear all values from the KeyValueTable.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Remove">Remove</a></code></td>
+                        <td>Removes a element from the table using a key.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__add_OnChanged">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>add_OnChanged</h1>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__remove_OnChanged">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>remove_OnChanged</h1>
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Add">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Add</h1>
+
+            <h2>Summary</h2>
+<p>Add a key and a value to the <code><a href="#AssetIcons_Editors_Preferences_KeyValueTable">KeyValueTable</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Clear">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Clear</h1>
+
+            <h2>Summary</h2>
+<p>Clear all values from the <code><a href="#AssetIcons_Editors_Preferences_KeyValueTable">KeyValueTable</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueEventTable_TKey_TValue__Remove">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Remove</h1>
+
+            <h2>Summary</h2>
+<p>Removes a element from the table using a key.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueTable">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>KeyValueTable</h1>
+
+            <h2>Summary</h2>
+<p>A base class for the <code><a href="#AssetIcons_Editors_Preferences_KeyValueTable">KeyValueTable</a></code> that exposes non-generic methods.</p>
+
+
+
+            <h2>Instance Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_KeyValueTable_Clear">Clear</a></code></td>
+                        <td>Clear all values from the KeyValueTable.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueTable_Clear">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Clear</h1>
+
+            <h2>Summary</h2>
+<p>Clear all values from the <code><a href="#AssetIcons_Editors_Preferences_KeyValueTable">KeyValueTable</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueTable___">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>KeyValueTable&lt;TKey,TValue&gt;</h1>
+
+            <h2>Summary</h2>
+<p></p>
+
+
+
+            <h2>Instance Methods</h2>
+            <table>
+                <tr>
+                    <th width="185">Method</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Add">Add</a></code></td>
+                        <td>Add a key and a value to the KeyValueTable.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Clear">Clear</a></code></td>
+                        <td>Clear all values from the KeyValueTable.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Remove">Remove</a></code></td>
+                        <td>Removes a element from the table using a key.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Add">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Add</h1>
+
+            <h2>Summary</h2>
+<p>Add a key and a value to the <code><a href="#AssetIcons_Editors_Preferences_KeyValueTable">KeyValueTable</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Clear">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Clear</h1>
+
+            <h2>Summary</h2>
+<p>Clear all values from the <code><a href="#AssetIcons_Editors_Preferences_KeyValueTable">KeyValueTable</a></code>.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_KeyValueTable_TKey_TValue__Remove">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Remove</h1>
+
+            <h2>Summary</h2>
+<p>Removes a element from the table using a key.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_PreferencesPreset">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>PreferencesPreset</h1>
+
+            <h2>Summary</h2>
+<p>Represents user preferences in a serializable format.</p>
+
+
+            <h2>Instance Properties</h2>
+            <table>
+                <tr>
+                    <th width="185">Property</th>
+                    <th>Description</th>
+                </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset_Enabled">Enabled</a></code></td>
+                        <td>Controls whether AssetIcons should be enabled or disabled.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset_DrawGUIStyles">DrawGUIStyles</a></code></td>
+                        <td>Enables previewing of Unity GUIStyle assets.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset_PrefabResolution">PrefabResolution</a></code></td>
+                        <td>Allows for adjusting the resolution AssetIcons will render prefabs with.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset_SelectionTint">SelectionTint</a></code></td>
+                        <td>Controls how strong of a tint is applied to AssetIcons rendered graphics when selected.</td>
+                    </tr>
+                    <tr>
+                        <td><code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset_TypeIcons">TypeIcons</a></code></td>
+                        <td>A collection of graphics associated with file extensions that AssetIcons uses to render custom
+file icons.</td>
+                    </tr>
+            </table>
+
+
+
+
+
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_PreferencesPreset_Enabled">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>Enabled</h1>
+
+            <h2>Summary</h2>
+<p>Controls whether AssetIcons should be enabled or disabled.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_PreferencesPreset_DrawGUIStyles">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>DrawGUIStyles</h1>
+
+            <h2>Summary</h2>
+<p>Enables previewing of Unity <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/GUIStyle">GUIStyle</a></code> assets.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_PreferencesPreset_PrefabResolution">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>PrefabResolution</h1>
+
+            <h2>Summary</h2>
+<p>Allows for adjusting the resolution AssetIcons will render prefabs with.</p>
+
+            <h2>Remarks</h2>
+<p>If you are struggling with performance with a large amount of rendered assets, you could try
+adjusting this to boost performance.</p>
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_PreferencesPreset_SelectionTint">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>SelectionTint</h1>
+
+            <h2>Summary</h2>
+<p>Controls how strong of a tint is applied to AssetIcons rendered graphics when selected.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+<article id="AssetIcons_Editors_Preferences_PreferencesPreset_TypeIcons">
+    <div class="breadcrumbsBar">
+        <!--<a href="#Radient">Radient</a> / GradientSampler-->
+    </div>
+    <div class="articleStyle">
+
+        <h1>TypeIcons</h1>
+
+            <h2>Summary</h2>
+<p>A collection of graphics associated with file extensions that AssetIcons uses to render custom
+file icons.</p>
+
+
+        <div class="post-footer">
+            <p>Report a problem on this page</p>
+        </div>
+    </div>
+</article>
+
+    <nav class="sidebar">
+        <div class="Logo">
+            <a href="#Home">
+                <svg width="100%" height="100%" viewBox="0 0 100 100">
+                    <g transform="translate(0,-197)">
+                        <path style="fill:#f14124;" d="m 35.5,197.75 29,10 -27.8,33.25 z"></path>
+                        <path style="fill:#fb9c11;" d="m 7.5,221 28.3,-11.85 1.3,43.3 z"></path>
+                        <path style="fill:#a7ea52;" d="m 1,256 13.4,-27.727 29.75,31.3 z"></path>
+                        <path style="fill:#00b050;" d="M 17.6,286 9,256.65 52.3,260.2 Z"></path>
+                        <path style="fill:#5dceaf;" d="M 51.35,296.5 25.65,280.25 59.9,254.15 Z"></path>
+                        <path style="fill:#5eccf3;" d="m 83.65,282.9 -30.8,5 8.85,-42.6 z"></path>
+                        <path style="fill:#4e67c8;" d="M 96.65,247.9 77.25,272 55.5,234.8 Z"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div class="site-title"><a href="#Home">AssetIcons</a></div>
+        <div class="site-tagline">For Version 2.0.0.0</div>
+        <div class="site-tagline"><a href="https://anthonymarmont.com/">Anthony Marmont</a></div>
+
+        <div class="navigation">
+
+
+
+<div class="tab">
+        <input id="AssetIcons" type="checkbox" checked />
+    <label style="padding-left: 20px" for="AssetIcons">
+        <div class="folderIcon"></div>AssetIcons
+    </label>
+    <div class="tab-content">
+
+
+
+
+
+<div class="tab">
+        <input id="Demo" type="checkbox" />
+    <label style="padding-left: 40px" for="Demo">
+        <div class="folderIcon"></div>Demo
+    </label>
+    <div class="tab-content">
+
+
+
+
+
+
+<a href="#AssetIcons_Demo_Item" style="padding-left: 60px"><div class="scriptIcon"></div>Item</a>
+
+
+
+<a href="#AssetIcons_Demo_Prop" style="padding-left: 60px"><div class="scriptIcon"></div>Prop</a>
+
+
+
+<a href="#AssetIcons_Demo_VoxelItem" style="padding-left: 60px"><div class="scriptIcon"></div>VoxelItem</a>
+
+    </div>
+</div>
+
+
+
+<div class="tab">
+        <input id="Editors" type="checkbox" />
+    <label style="padding-left: 40px" for="Editors">
+        <div class="folderIcon"></div>Editors
+    </label>
+    <div class="tab-content">
+
+
+
+
+
+<div class="tab">
+        <input id="Preferences" type="checkbox" />
+    <label style="padding-left: 60px" for="Preferences">
+        <div class="folderIcon"></div>Preferences
+    </label>
+    <div class="tab-content">
+
+
+
+
+
+
+<a href="#AssetIcons_Editors_Preferences_AssetReference" style="padding-left: 80px"><div class="scriptIcon"></div>AssetReference</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_BoolEventField" style="padding-left: 80px"><div class="scriptIcon"></div>BoolEventField</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_ColorTint" style="padding-left: 80px"><div class="scriptIcon"></div>ColorTint</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_ColorTintEventField" style="padding-left: 80px"><div class="scriptIcon"></div>ColorTintEventField</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_EventField" style="padding-left: 80px"><div class="scriptIcon"></div>EventField</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_EventField__" style="padding-left: 80px"><div class="scriptIcon"></div>EventField&lt;T&gt;</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_FromValuesAttribute" style="padding-left: 80px"><div class="scriptIcon"></div>FromValuesAttribute</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_IconMapping" style="padding-left: 80px"><div class="scriptIcon"></div>IconMapping</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_IntEventField" style="padding-left: 80px"><div class="scriptIcon"></div>IntEventField</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_KeyValueEventTable___" style="padding-left: 80px"><div class="scriptIcon"></div>KeyValueEventTable&lt;TKey,TValue&gt;</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_KeyValueTable" style="padding-left: 80px"><div class="scriptIcon"></div>KeyValueTable</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_KeyValueTable___" style="padding-left: 80px"><div class="scriptIcon"></div>KeyValueTable&lt;TKey,TValue&gt;</a>
+
+
+
+<a href="#AssetIcons_Editors_Preferences_PreferencesPreset" style="padding-left: 80px"><div class="scriptIcon"></div>PreferencesPreset</a>
+
+    </div>
+</div>
+
+
+
+
+<a href="#AssetIcons_Editors_AssetIconDrawer" style="padding-left: 60px"><div class="scriptIcon"></div>AssetIconDrawer</a>
+
+
+
+<a href="#AssetIcons_Editors_AssetIconProjectHooks" style="padding-left: 60px"><div class="scriptIcon"></div>AssetIconProjectHooks</a>
+
+
+
+<a href="#AssetIcons_Editors_AssetIconRenderer" style="padding-left: 60px"><div class="scriptIcon"></div>AssetIconRenderer</a>
+
+
+
+<a href="#AssetIcons_Editors_AssetIconsPreferences" style="padding-left: 60px"><div class="scriptIcon"></div>AssetIconsPreferences</a>
+
+
+
+<a href="#AssetIcons_Editors_CameraSetup" style="padding-left: 60px"><div class="scriptIcon"></div>CameraSetup</a>
+
+
+
+<a href="#AssetIcons_Editors_CompiledStyleDefinition" style="padding-left: 60px"><div class="scriptIcon"></div>CompiledStyleDefinition</a>
+
+
+
+<a href="#AssetIcons_Editors_RenderCache" style="padding-left: 60px"><div class="scriptIcon"></div>RenderCache</a>
+
+    </div>
+</div>
+
+
+
+
+<a href="#AssetIcons_AssetIconAttribute" style="padding-left: 40px"><div class="scriptIcon"></div>AssetIconAttribute</a>
+
+
+
+<a href="#AssetIcons_IconAnchor" style="padding-left: 40px"><div class="scriptIcon"></div>IconAnchor</a>
+
+
+
+<a href="#AssetIcons_IconAspect" style="padding-left: 40px"><div class="scriptIcon"></div>IconAspect</a>
+
+
+
+<a href="#AssetIcons_IconColor" style="padding-left: 40px"><div class="scriptIcon"></div>IconColor</a>
+
+
+
+<a href="#AssetIcons_IconProjection" style="padding-left: 40px"><div class="scriptIcon"></div>IconProjection</a>
+
+
+
+<a href="#AssetIcons_ProductInformation" style="padding-left: 40px"><div class="scriptIcon"></div>ProductInformation</a>
+
+
+
+<a href="#AssetIcons_StyleDefinition" style="padding-left: 40px"><div class="scriptIcon"></div>StyleDefinition</a>
+
+    </div>
+</div>
+        </div>
+    </nav>
+</body>
+</html>
