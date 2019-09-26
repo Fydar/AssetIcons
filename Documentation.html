@@ -300,7 +300,6 @@
 #AssetIcons_Editors_Preferences_EventField:target,
 #AssetIcons_Editors_Preferences_EventField_add_OnChanged:target,
 #AssetIcons_Editors_Preferences_EventField_remove_OnChanged:target,
-#AssetIcons_Editors_Preferences_EventField_InvokeChanged:target,
 #AssetIcons_Editors_Preferences_EventField__:target,
 #AssetIcons_Editors_Preferences_EventField_T__Value:target,
 #AssetIcons_Editors_Preferences_FromValuesAttribute:target,
@@ -608,30 +607,30 @@
 <p>In this example, we are using AssetIcons to draw a simple <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite">Sprite</a></code> on a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code>.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
-<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#Item">Item</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="method"><a href="#AssetIcons_AssetIconAttribute_AssetIconAttribute(string_ string_ string_ string_ int_ AssetIcons_IconAnchor_ AssetIcons_IconAspect_ string_ string_ int_ UnityEngine_FontStyle_ AssetIcons_IconAnchor_ AssetIcons_IconProjection_ int_ string)">AssetIcon</a></span>]
+	[<span class="method"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="field">Icon</span>;
 }</code><p>We can also use CSS styling to modify the graphics drawn by this attribute. In this example we are going to remove the max size limit on icons and tint it purple.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
-<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#Item">Item</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#Item">AssetIcon</a></span>(<span class="type"><a href="#Item">IconStyle</a></span>.<span class="type"><a href="#Item">MaxSize</a></span>.<span class="type"><a href="#Item">None</a></span> + <span class="string">"Color: #ff99cc"</span>)]
+	[<span class="method"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">tint</span>: <span class="string">"#ff99cc"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="field">Icon</span>;
 }</code><p>This attribute can also be placed on methods and properties.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
-<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#Item">Item</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="property">AssetIcon</span>(<span class="property">IconStyle</span>.<span class="property">MaxSize</span>.<span class="property">None</span> + <span class="property">IconStyle</span>.<span class="property">Layer</span>.<span class="property">Above</span>)]
-	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="property">Icon</span> { <span class="method"><a href="#Item_Icon_get">get</a></span>; }
+	[<span class="method"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">layer</span>: <span class="numeric">0</span>)]
+	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="property">Icon</span> { <span class="method">get</span>; }
 	
-	[<span class="method"><a href="#Item_GenerateBackground()">AssetIcon</a></span>(<span class="method"><a href="#Item_GenerateBackground()">IconStyle</a></span>.<span class="method"><a href="#Item_GenerateBackground()">MaxSize</a></span>.<span class="method"><a href="#Item_GenerateBackground()">None</a></span> + <span class="method"><a href="#Item_GenerateBackground()">IconStyle</a></span>.<span class="method"><a href="#Item_GenerateBackground()">Layer</a></span>.<span class="method"><a href="#Item_GenerateBackground()">Below</a></span>)]
-	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="method"><a href="#Item_GenerateBackground()">GenerateBackground</a></span>()
+	[<span class="method"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">layer</span>: -<span class="numeric">1</span>)]
+	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="method">GenerateBackground</span>()
 	{
 		<span class="keyword">return</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span>.<span class="property">black</span>;
 	}
@@ -1939,7 +1938,7 @@
         <h1>Item</h1>
 
             <h2>Summary</h2>
-<p>A sample <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code> that draws a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/SpringJoint">SpringJoint</a></code> icon.</p>
+<p>A sample <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject">ScriptableObject</a></code> that draws a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite">Sprite</a></code> icon.</p>
 
             <h2>Instance Fields</h2>
             <table>
@@ -2216,7 +2215,7 @@
                 </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawBackground">DrawBackground</a></code></td>
-                        <td>Draws an empty background using AssetIcons.Editors.AssetIconDrawer.BackgroundColor to hide Unity's original icon.</td>
+                        <td>Draws an empty background using BackgroundColor to hide Unity's original icon.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawColor">DrawColor</a></code></td>
@@ -2283,7 +2282,7 @@
         <h1>DrawBackground</h1>
 
             <h2>Summary</h2>
-<p>Draws an empty background using <code>AssetIcons.Editors.AssetIconDrawer.BackgroundColor</code> to hide Unity's original icon.</p>
+<p>Draws an empty background using <code><a href="#AssetIcons_Editors_AssetIconDrawer_BackgroundColor">BackgroundColor</a></code> to hide Unity's original icon.</p>
 
             <h2>Remarks</h2>
 <p>This <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color">Color</a></code> is used for masking the icon that Unity draws. </p><p>This changes with Untiy's pro-skin across differnet versions of Unity.</p>
@@ -2496,7 +2495,7 @@ sprites that are tightly packed to draw artifacts.</p>
         <h1>AssetIconRenderer</h1>
 
             <h2>Summary</h2>
-<p>Used by AssetIcons to render prefabs to a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code>.</p>
+<p>Used by AssetIcons to render Prefabs to a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D">Texture2D</a></code>.</p>
 
 
 
@@ -2555,16 +2554,16 @@ sprites that are tightly packed to draw artifacts.</p>
 <p>You can interact with AssetIcons preferences via an editor scripting API.</p><code><span class="keyword">using</span> AssetIcons.Editors;
 <span class="keyword">using</span> UnityEditor;
 
-<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#DemoWindow">DemoWindow</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">EditorWindow</a></span>
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type">DemoWindow</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">EditorWindow</a></span>
 {
-	[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/MenuItem.MenuItem.html">MenuItem</a></span> (<span class="string">"AssetIcons/Demo Window"</span>)]
-	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_Init()">Init</a></span> ()
+	[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/MenuItem.html">MenuItem</a></span> (<span class="string">"AssetIcons/Demo Window"</span>)]
+	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">Init</span> ()
 	{
-		<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">var</a></span> <span class="local">window</span> = <span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.GetWindow.html">GetWindow</a></span>(<span class="keyword">typeof</span>(<span class="type"><a href="#DemoWindow">DemoWindow</a></span>), <span class="keyword">false</span>, <span class="string">"Demo Window"</span>);
+		<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">var</a></span> <span class="local">window</span> = <span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.GetWindow.html">GetWindow</a></span>(<span class="keyword">typeof</span>(<span class="type">DemoWindow</span>), <span class="keyword">false</span>, <span class="string">"Demo Window"</span>);
 		<span class="local">window</span>.<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.Show.html">Show</a></span> ();
 	}
 
-	<span class="keyword">private</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_OnGUI()">OnGUI</a></span> ()
+	<span class="keyword">private</span> <span class="keyword">void</span> <span class="method">OnGUI</span> ()
 	{
 		<span class="type"><a href="#AssetIcons_Editors_AssetIconsPreferences">AssetIconsPreferences</a></span>.<span class="property">Enabled</span>.<span class="property">Value</span> = <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorGUILayout.html">EditorGUILayout</a></span>.<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorGUILayout.Toggle.html">Toggle</a></span> (<span class="string">"AssetIcons Enabled"</span>, <span class="type"><a href="#AssetIcons_Editors_AssetIconsPreferences">AssetIconsPreferences</a></span>.<span class="property">Enabled</span>.<span class="property">Value</span>);
 	}
@@ -2605,7 +2604,7 @@ sprites that are tightly packed to draw artifacts.</p>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_PrefabResolution">PrefabResolution</a></code></td>
-                        <td>A shorthand for CurrentPreferences.PrefabResolution.Allows for adjusting the resolution AssetIcons will render prefabs with.</td>
+                        <td>A shorthand for CurrentPreferences.PrefabResolution.Allows for adjusting the resolution AssetIcons will render Prefabs with.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconsPreferences_SelectionTint">SelectionTint</a></code></td>
@@ -2660,16 +2659,16 @@ installed will not preserve these saved preferences.</p>
 <p>You can interact with AssetIcons preferences via an editor scripting API.</p><code><span class="keyword">using</span> AssetIcons.Editors;
 <span class="keyword">using</span> UnityEditor;
 
-<span class="keyword">public</span> <span class="keyword">class</span> <span class="type"><a href="#DemoWindow">DemoWindow</a></span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">EditorWindow</a></span>
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="type">DemoWindow</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">EditorWindow</a></span>
 {
-	[<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/MenuItem.MenuItem.html">MenuItem</a></span> (<span class="string">"AssetIcons/Demo Window"</span>)]
-	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_Init()">Init</a></span> ()
+	[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/MenuItem.html">MenuItem</a></span> (<span class="string">"AssetIcons/Demo Window"</span>)]
+	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">Init</span> ()
 	{
-		<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">var</a></span> <span class="local">window</span> = <span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.GetWindow.html">GetWindow</a></span>(<span class="keyword">typeof</span>(<span class="type"><a href="#DemoWindow">DemoWindow</a></span>), <span class="keyword">false</span>, <span class="string">"Demo Window"</span>);
+		<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.html">var</a></span> <span class="local">window</span> = <span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.GetWindow.html">GetWindow</a></span>(<span class="keyword">typeof</span>(<span class="type">DemoWindow</span>), <span class="keyword">false</span>, <span class="string">"Demo Window"</span>);
 		<span class="local">window</span>.<span class="method"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorWindow.Show.html">Show</a></span> ();
 	}
 
-	<span class="keyword">private</span> <span class="keyword">void</span> <span class="method"><a href="#DemoWindow_OnGUI()">OnGUI</a></span> ()
+	<span class="keyword">private</span> <span class="keyword">void</span> <span class="method">OnGUI</span> ()
 	{
 		<span class="type"><a href="#AssetIcons_Editors_Preferences_PreferencesPreset">var</a></span> <span class="local">preferences</span> = <span class="type"><a href="#AssetIcons_Editors_AssetIconsPreferences">AssetIconsPreferences</a></span>.<span class="property">CurrentPreferences</span>;
 
@@ -2728,7 +2727,7 @@ installed will not preserve these saved preferences.</p>
         <h1>PrefabResolution</h1>
 
             <h2>Summary</h2>
-<p>A shorthand for <code>CurrentPreferences.PrefabResolution</code>.</p><p>Allows for adjusting the resolution AssetIcons will render prefabs with.</p>
+<p>A shorthand for <code>CurrentPreferences.PrefabResolution</code>.</p><p>Allows for adjusting the resolution AssetIcons will render Prefabs with.</p>
 
             <h2>Remarks</h2>
 <p>If you are struggling with performance with a large amount of rendered assets, you could try
@@ -2785,7 +2784,7 @@ file icons.</p>
         <h1>CameraSetup</h1>
 
             <h2>Summary</h2>
-<p>A camera setup used in <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></code> to render a prefab.</p>
+<p>A camera setup used in <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></code> to render a Prefab.</p>
 
             <h2>Instance Fields</h2>
             <table>
@@ -2795,11 +2794,11 @@ file icons.</p>
                 </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_CameraSetup_Padding">Padding</a></code></td>
-                        <td>Padding around the edges of a rendered prefab. This field has a default value of <code>0</code></td>
+                        <td>Padding around the edges of a rendered Prefab. This field has a default value of <code>0</code></td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_CameraSetup_PreviewDirection">PreviewDirection</a></code></td>
-                        <td>The vector direction to render a prefab from. This field has a default value of <code>(0.0, 0.0, 0.0)</code></td>
+                        <td>The vector direction to render a Prefab from. This field has a default value of <code>(0.0, 0.0, 0.0)</code></td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_CameraSetup_TransparentBackground">TransparentBackground</a></code></td>
@@ -2837,7 +2836,7 @@ file icons.</p>
                 </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_CameraSetup_Default">Default</a></code></td>
-                        <td>A set of default settings to render a prefab with. </td>
+                        <td>A set of default settings to render a Prefab with. </td>
                     </tr>
             </table>
 
@@ -2859,7 +2858,7 @@ file icons.</p>
         <h1>Padding</h1>
 
             <h2>Summary</h2>
-<p>Padding around the edges of a rendered prefab.</p>
+<p>Padding around the edges of a rendered Prefab.</p>
 
 
         <div class="post-footer">
@@ -2877,7 +2876,7 @@ file icons.</p>
         <h1>PreviewDirection</h1>
 
             <h2>Summary</h2>
-<p>The vector direction to render a prefab from.</p>
+<p>The vector direction to render a Prefab from.</p>
 
 
         <div class="post-footer">
@@ -2967,7 +2966,7 @@ file icons.</p>
         <h1>Default</h1>
 
             <h2>Summary</h2>
-<p>A set of default settings to render a prefab with.</p>
+<p>A set of default settings to render a Prefab with.</p>
 
 
         <div class="post-footer">
@@ -2985,7 +2984,7 @@ file icons.</p>
         <h1>CompiledStyleDefinition</h1>
 
             <h2>Summary</h2>
-<p></p>
+<p>A formatted representation of the <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code> for drawing graphics in the <code><a href="#AssetIcons_Editors_AssetIconDrawer">AssetIconDrawer</a></code>.</p>
 
 
             <h2>Instance Properties</h2>
@@ -3336,7 +3335,7 @@ file icons.</p>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_Preferences_AssetReference_AssetName">AssetName</a></code></td>
-                        <td>The UnityEngine.Object.name of the asset. </td>
+                        <td>The name of the asset. </td>
                     </tr>
             </table>
 
@@ -3364,7 +3363,7 @@ file icons.</p>
                 </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_Preferences_AssetReference_GetFromPath">GetFromPath</a></code></td>
-                        <td></td>
+                        <td>Loads an asset from the AssetDatabase with the specified name.</td>
                     </tr>
             </table>
 
@@ -3403,7 +3402,7 @@ file icons.</p>
         <h1>AssetName</h1>
 
             <h2>Summary</h2>
-<p>The <code>UnityEngine.Object.name</code> of the asset.</p>
+<p>The <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/name">name</a></code> of the asset.</p>
 
 
         <div class="post-footer">
@@ -3439,7 +3438,7 @@ file icons.</p>
         <h1>GetFromPath</h1>
 
             <h2>Summary</h2>
-<p></p>
+<p>Loads an asset from the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/AssetDatabase">AssetDatabase</a></code> with the specified name.</p>
 
 
         <div class="post-footer">
@@ -3624,10 +3623,6 @@ file icons.</p>
                     <th width="185">Method</th>
                     <th>Description</th>
                 </tr>
-                    <tr>
-                        <td><code><a href="#AssetIcons_Editors_Preferences_EventField_InvokeChanged">InvokeChanged</a></code></td>
-                        <td></td>
-                    </tr>
             </table>
 
 
@@ -3667,24 +3662,6 @@ file icons.</p>
         <h1>remove_OnChanged</h1>
 
 
-
-
-        <div class="post-footer">
-            <p>Report a problem on this page</p>
-        </div>
-    </div>
-</article>
-
-<article id="AssetIcons_Editors_Preferences_EventField_InvokeChanged">
-    <div class="breadcrumbsBar">
-        <!--<a href="#Radient">Radient</a> / GradientSampler-->
-    </div>
-    <div class="articleStyle">
-
-        <h1>InvokeChanged</h1>
-
-            <h2>Summary</h2>
-<p></p>
 
 
         <div class="post-footer">
@@ -4186,7 +4163,7 @@ file icons.</p>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset_PrefabResolution">PrefabResolution</a></code></td>
-                        <td>Allows for adjusting the resolution AssetIcons will render prefabs with.</td>
+                        <td>Allows for adjusting the resolution AssetIcons will render Prefabs with.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset_SelectionTint">SelectionTint</a></code></td>
@@ -4256,7 +4233,7 @@ file icons.</td>
         <h1>PrefabResolution</h1>
 
             <h2>Summary</h2>
-<p>Allows for adjusting the resolution AssetIcons will render prefabs with.</p>
+<p>Allows for adjusting the resolution AssetIcons will render Prefabs with.</p>
 
             <h2>Remarks</h2>
 <p>If you are struggling with performance with a large amount of rendered assets, you could try
