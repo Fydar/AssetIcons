@@ -191,11 +191,9 @@
 #AssetIcons_IconAspect_Envelop:target,
 #AssetIcons_IconAspect_Stretch:target,
 #AssetIcons_IconColor:target,
-#AssetIcons_IconColor_Transparent:target,
+#AssetIcons_IconColor_White:target,
 #AssetIcons_IconColor_Black:target,
 #AssetIcons_IconColor_Gray:target,
-#AssetIcons_IconColor_Grey:target,
-#AssetIcons_IconColor_White:target,
 #AssetIcons_IconColor_Blue:target,
 #AssetIcons_IconColor_Cyan:target,
 #AssetIcons_IconColor_Green:target,
@@ -554,6 +552,7 @@
 
 <body>
 
+
 <article id="AssetIcons_AssetIconAttribute">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -564,40 +563,43 @@
 
             <h2>Summary</h2>
 <p>Used to specify that this member controls the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></code>'s assets' icon.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public sealed class</span> <span class="type">AssetIconAttribute</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/PropertyAttribute.html">PropertyAttribute</a></span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.attributeusageattribute">AttributeUsage</a></span>]
+<span class="keyword">public sealed class</span> <span class="type">AssetIconAttribute</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/PropertyAttribute.html">PropertyAttribute</a></span>;</code>
 
             <h2>Example</h2>
 <p>In this example, we are using AssetIcons to draw a simple <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></code> on a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></code>.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
+	[<span class="type">AssetIcon</span>]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="field">Icon</span>;
 }</code><p>We can also use CSS styling to modify the graphics drawn by this attribute. In this example we are going to remove the max size limit on icons and tint it purple.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">tint</span>: <span class="string">"#ff99cc"</span>)]
+	[<span class="type">AssetIcon</span> (<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">tint</span>: <span class="string">"#ff99cc"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="field">Icon</span>;
 }</code><p>This attribute can also be placed on methods and properties.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">layer</span>: <span class="numeric">0</span>)]
+	[<span class="type">AssetIcon</span> (<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">layer</span>: <span class="numeric">0</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> <span class="property">Icon</span> { <span class="method">get</span>; }
 	
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">layer</span>: -<span class="numeric">1</span>)]
-	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="method">GenerateBackground</span>()
+	[<span class="type">AssetIcon</span> (<span class="parameter">maxSize</span>: <span class="numeric">256</span>, <span class="parameter">layer</span>: -<span class="numeric">1</span>)]
+	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="method">GenerateBackground</span> ()
 	{
 		<span class="keyword">return</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span>.<span class="property">black</span>;
 	}
@@ -629,12 +631,13 @@
 
 
             <h2>Remarks</h2>
-<p>This attribute can be placed on:</p><ul><li>Fields</li><li>Properties</li><li>Methods (only parameterless ones)</li></ul>
+<p>This attribute can be placed on:</p><ul><li>Fields</li><li>Properties</li><li>Methods (only parameterless ones)</li></ul><p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> can be placed on the same member multiple times to draw the same graphic multiple times.</p>
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_AssetIconAttribute_Style">
     <div class="breadcrumbsBar">
@@ -645,7 +648,7 @@
         <h1>Style</h1>
 
             <h2>Summary</h2>
-<p>A style defined in the constructor of the <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>.</p>
+<p>A style defined in the constructor of the <code>AssetIconAttribute</code>.</p>
 
         <h3>Definition</h3>
         
@@ -659,6 +662,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_AssetIconAttribute_FilePath">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -669,7 +673,9 @@
 
             <h2>Summary</h2>
 <p>The local file path where this attribute is implemented.</p>
-            <p>Also see: <code><a href="#AssetIcons_AssetIconAttribute_LineNumber">LineNumber</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_AssetIconAttribute_LineNumber">LineNumber</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -684,6 +690,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_AssetIconAttribute_LineNumber">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -694,7 +701,9 @@
 
             <h2>Summary</h2>
 <p>The line number where this attribute implemented.</p>
-            <p>Also see: <code><a href="#AssetIcons_AssetIconAttribute_FilePath">FilePath</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_AssetIconAttribute_FilePath">FilePath</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -709,6 +718,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconAnchor">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -718,29 +728,31 @@
         <h1>IconAnchor</h1>
 
             <h2>Summary</h2>
-<p>When changing the height, the anchor will change how much each side of the rect will change.</p><p>Using anchors is the fastest and easiest way to position elements in an icon.</p>
-            <p>Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></c>, <c><a href="#AssetIcons_StyleDefinition">StyleDefinition</a>.</code></p>
+<p>When changing the height, the anchor will change how much each side of the <see cref="!:Rect" /> will change.</p><p>Using anchors is the fastest and easiest way to position elements in an icon.</p>
+            <p>
+                Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>, <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
         <code><span class="keyword">public enum</span> <span class="type">IconAnchor</span>;</code>
 
             <h2>Example</h2>
-<p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> accepts an <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> for styling.</p><p>Below is an example of the <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> being used to create a bar at the bottom of the assets icon.</p><code><span class="keyword">using</span> AssetIcons;
+<p>The <code>AssetIconAttribute</code> accepts an <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> for styling.</p><p>Below is an example of the <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> being used to create a bar at the bottom of the assets icon.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Bottom</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>)]
+	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span> (<span class="parameter">anchor</span>: <span class="type">IconAnchor</span>.<span class="field">Bottom</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="property">BottomBar</span> { <span class="method">get</span>; }
 }</code><p>Anchoring the asset to the bottom of the icon and then adjusting the height results in a bar on the bottom of the icon.</p><p>Anchoring the asset to corners of the icon can create handy annotations for assets.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">TopLeft</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>, <span class="parameter">width</span>: <span class="string">"15%"</span>)]
+	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span> (<span class="parameter">anchor</span>: <span class="type">IconAnchor</span>.<span class="field">TopLeft</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>, <span class="parameter">width</span>: <span class="string">"15%"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="property">TopLeftTag</span> { <span class="method">get</span>; }
 }</code>
 
@@ -755,7 +767,7 @@
                 </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_IconAnchor_Center">Center</a></code></td>
-                        <td>Anchored in the center of the graphic. This field has a constant value of <code>0</code>.</td>
+                        <td>Anchored to the center of the graphic. This field has a constant value of <code>0</code>.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_IconAnchor_Top">Top</a></code></td>
@@ -800,6 +812,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconAnchor_Center">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -809,20 +822,20 @@
         <h1>Center</h1>
 
             <h2>Summary</h2>
-<p>Anchored in the center of the graphic.</p>
+<p>Anchored to the center of the graphic.</p>
 
         <h3>Definition</h3>
                 
         <code><span class="keyword">public static </span><span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span> Center;</code>
 
             <h2>Example</h2>
-<p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> accepts an <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> for styling.</p><p>Below is an example of the "center" anchoring being used to shink the asset.</p><code><span class="keyword">using</span> AssetIcons;
+<p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> accepts an <code>IconAnchor</code> for styling.</p><p>Below is an example of the "center" anchoring being used to shink the asset.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Center</span>, <span class="parameter">width</span>: <span class="string">"85%"</span>, <span class="parameter">height</span>: <span class="string">"85%"</span>)]
+	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span> (<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Center</span>, <span class="parameter">width</span>: <span class="string">"85%"</span>, <span class="parameter">height</span>: <span class="string">"85%"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="property">Icon</span> { <span class="method">get</span>; }
 }</code>
             <h2>Remarks</h2>
@@ -832,6 +845,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconAnchor_Top">
     <div class="breadcrumbsBar">
@@ -852,10 +866,10 @@
 <p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> accepts an <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> for styling.</p><p>Below is an example of the "top" anchoring being used to create a bar at the top of the asset.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Top</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>)]
+	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span> (<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Top</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="property">TopBar</span> { <span class="method">get</span>; }
 }</code>
 
@@ -864,6 +878,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconAnchor_Bottom">
     <div class="breadcrumbsBar">
@@ -884,10 +899,10 @@
 <p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> accepts an <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> for styling.</p><p>Below is an example of the "bottom" anchoring being used to create a bar at the bottom of the asset.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Bottom</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>)]
+	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span> (<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Bottom</span>, <span class="parameter">height</span>: <span class="string">"10%"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="property">BottomBar</span> { <span class="method">get</span>; }
 }</code>
 
@@ -896,6 +911,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconAnchor_Left">
     <div class="breadcrumbsBar">
@@ -916,10 +932,10 @@
 <p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> accepts an <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> for styling.</p><p>Below is an example of the "left" anchoring being used to create a bar on the left of the asset.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Left</span>, <span class="parameter">width</span>: <span class="string">"15%"</span>)]
+	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span> (<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Left</span>, <span class="parameter">width</span>: <span class="string">"15%"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="property">LeftBar</span> { <span class="method">get</span>; }
 }</code>
 
@@ -928,6 +944,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconAnchor_Right">
     <div class="breadcrumbsBar">
@@ -948,10 +965,10 @@
 <p>The <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> accepts an <code><a href="#AssetIcons_IconAnchor">IconAnchor</a></code> for styling.</p><p>Below is an example of the "right" anchoring being used to create a bar on the right of the asset.</p><code><span class="keyword">using</span> AssetIcons;
 <span class="keyword">using</span> UnityEngine;
 
-[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span>(<span class="property">menuName</span> = <span class="string">"Item"</span>)]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html">CreateAssetMenu</a></span> (<span class="property">menuName</span> = <span class="string">"Item"</span>)]
 <span class="keyword">public</span> <span class="keyword">class</span> <span class="type">Item</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></span>
 {
-	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>(<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Right</span>, <span class="parameter">width</span>: <span class="string">"15%"</span>)]
+	[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span> (<span class="parameter">anchor</span>: <span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span>.<span class="field">Right</span>, <span class="parameter">width</span>: <span class="string">"15%"</span>)]
 	<span class="keyword">public</span> <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> <span class="property">RightBar</span> { <span class="method">get</span>; }
 }</code>
 
@@ -960,6 +977,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconAnchor_TopLeft">
     <div class="breadcrumbsBar">
@@ -984,6 +1002,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconAnchor_TopRight">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1000,12 +1019,14 @@
         <code><span class="keyword">public static </span><span class="type"><a href="#AssetIcons_IconAnchor">IconAnchor</a></span> TopRight;</code>
 
 
-
+            <h2>Remarks</h2>
+<p>It's not recommended to anchor small graphics in the top-right due to Unity Collab icon being drawn there.</p>
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconAnchor_BottomLeft">
     <div class="breadcrumbsBar">
@@ -1030,6 +1051,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconAnchor_BottomRight">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1053,6 +1075,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconAspect">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1063,7 +1086,9 @@
 
             <h2>Summary</h2>
 <p>An enum that represents how the aspect ratio of a graphic should be used.</p>
-            <p>Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></c>, <c><a href="#AssetIcons_StyleDefinition">StyleDefinition</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>, <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -1103,6 +1128,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconAspect_Fit">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1113,19 +1139,23 @@
 
             <h2>Summary</h2>
 <p>The rendered graphic should fit inside the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code> without any stretching.</p>
-            <p>Also see: <code><a href="#AssetIcons_IconAspect_Envelop">Envelop</a></c>, <c><a href="#AssetIcons_IconAspect_Stretch">Stretch</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_IconAspect_Envelop">Envelop</a></code>, <code><a href="#AssetIcons_IconAspect_Stretch">Stretch</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
         <code><span class="keyword">public static </span><span class="type"><a href="#AssetIcons_IconAspect">IconAspect</a></span> Fit;</code>
 
 
-
+            <h2>Remarks</h2>
+<p>This is the default value for the <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>.</p>
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconAspect_Envelop">
     <div class="breadcrumbsBar">
@@ -1137,7 +1167,9 @@
 
             <h2>Summary</h2>
 <p>The rendered graphic should envelop the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code> without any stretching.</p>
-            <p>Also see: <code><a href="#AssetIcons_IconAspect_Fit">Fit</a></c>, <c><a href="#AssetIcons_IconAspect_Stretch">Stretch</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_IconAspect_Fit">Fit</a></code>, <code><a href="#AssetIcons_IconAspect_Stretch">Stretch</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
@@ -1151,6 +1183,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconAspect_Stretch">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1161,7 +1194,9 @@
 
             <h2>Summary</h2>
 <p>The rendered graphic will stretch to the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code> dimensions.</p>
-            <p>Also see: <code><a href="#AssetIcons_IconAspect_Fit">Fit</a></c>, <c><a href="#AssetIcons_IconAspect_Envelop">Envelop</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_IconAspect_Fit">Fit</a></code>, <code><a href="#AssetIcons_IconAspect_Envelop">Envelop</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
@@ -1175,6 +1210,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconColor">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1185,7 +1221,9 @@
 
             <h2>Summary</h2>
 <p>Tints the drawn graphic a color.</p>
-            <p>Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></c>, <c><a href="#AssetIcons_StyleDefinition">StyleDefinition</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>, <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -1203,24 +1241,16 @@
                     <th>Description</th>
                 </tr>
                     <tr>
-                        <td><code><a href="#AssetIcons_IconColor_Transparent">Transparent</a></code></td>
-                        <td>Makes the drawn graphic transparent. This field has a constant value of <code>"#ffffff00"</code>.</td>
+                        <td><code><a href="#AssetIcons_IconColor_White">White</a></code></td>
+                        <td>No tinting. This field has a constant value of <code>"#ffffff"</code>.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_IconColor_Black">Black</a></code></td>
-                        <td>Tints the drawn graphic black. This field has a constant value of <code>"#555555"</code>.</td>
+                        <td>Tints the drawn graphic black. This field has a constant value of <code>"#000000"</code>.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_IconColor_Gray">Gray</a></code></td>
                         <td>Tints the drawn graphic gray. This field has a constant value of <code>"#888888"</code>.</td>
-                    </tr>
-                    <tr>
-                        <td><code><a href="#AssetIcons_IconColor_Grey">Grey</a></code></td>
-                        <td>Tints the drawn graphic gray. Alternative British spelling of gray. This field has a constant value of <code>"#888888"</code>.</td>
-                    </tr>
-                    <tr>
-                        <td><code><a href="#AssetIcons_IconColor_White">White</a></code></td>
-                        <td>No tinting. This field has a constant value of <code>"#ffffff"</code>.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_IconColor_Blue">Blue</a></code></td>
@@ -1265,28 +1295,31 @@
     </div>
 </article>
 
-<article id="AssetIcons_IconColor_Transparent">
+
+<article id="AssetIcons_IconColor_White">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
     </div>
     <div class="articleStyle">
 
-        <h1>Transparent</h1>
+        <h1>White</h1>
 
             <h2>Summary</h2>
-<p>Makes the drawn graphic transparent.</p>
+<p>No tinting.</p>
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public static </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.string">string</a></span> Transparent;</code>
+        <code><span class="keyword">public static </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.string">string</a></span> White;</code>
 
 
-
+            <h2>Remarks</h2>
+<p>This is the default value for the styling of <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>.</p>
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconColor_Black">
     <div class="breadcrumbsBar">
@@ -1311,6 +1344,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconColor_Gray">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1321,7 +1355,6 @@
 
             <h2>Summary</h2>
 <p>Tints the drawn graphic gray.</p>
-            <p>Also see: <code><a href="#AssetIcons_IconColor_Grey">Grey</a>.</code></p>
 
         <h3>Definition</h3>
                 
@@ -1335,52 +1368,6 @@
     </div>
 </article>
 
-<article id="AssetIcons_IconColor_Grey">
-    <div class="breadcrumbsBar">
-        <!--<a href="#Radient">Radient</a> / GradientSampler-->
-    </div>
-    <div class="articleStyle">
-
-        <h1>Grey</h1>
-
-            <h2>Summary</h2>
-<p>Tints the drawn graphic gray. Alternative British spelling of gray.</p>
-            <p>Also see: <code><a href="#AssetIcons_IconColor_Gray">Gray</a>.</code></p>
-
-        <h3>Definition</h3>
-                
-        <code><span class="keyword">public static </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.string">string</a></span> Grey;</code>
-
-
-
-        <div class="post-footer">
-            <p>Report a problem on this page</p>
-        </div>
-    </div>
-</article>
-
-<article id="AssetIcons_IconColor_White">
-    <div class="breadcrumbsBar">
-        <!--<a href="#Radient">Radient</a> / GradientSampler-->
-    </div>
-    <div class="articleStyle">
-
-        <h1>White</h1>
-
-            <h2>Summary</h2>
-<p>No tinting.</p>
-
-        <h3>Definition</h3>
-                
-        <code><span class="keyword">public static </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.string">string</a></span> White;</code>
-
-
-
-        <div class="post-footer">
-            <p>Report a problem on this page</p>
-        </div>
-    </div>
-</article>
 
 <article id="AssetIcons_IconColor_Blue">
     <div class="breadcrumbsBar">
@@ -1405,6 +1392,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconColor_Cyan">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1427,6 +1415,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconColor_Green">
     <div class="breadcrumbsBar">
@@ -1451,6 +1440,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconColor_Yellow">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1473,6 +1463,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconColor_Orange">
     <div class="breadcrumbsBar">
@@ -1497,6 +1488,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconColor_Red">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1519,6 +1511,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconColor_Purple">
     <div class="breadcrumbsBar">
@@ -1543,6 +1536,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconColor_Magenta">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1566,6 +1560,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconProjection">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1576,7 +1571,9 @@
 
             <h2>Summary</h2>
 <p>An enum that represents camera projections when rendering Prefabs.</p>
-            <p>Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></c>, <c><a href="#AssetIcons_StyleDefinition">StyleDefinition</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>, <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -1612,6 +1609,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_IconProjection_Perspective">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1622,19 +1620,23 @@
 
             <h2>Summary</h2>
 <p>Represents a perspective camera projection.</p>
-            <p>Also see: <code><a href="#AssetIcons_IconProjection_Orthographic">Orthographic</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_IconProjection_Orthographic">Orthographic</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
         <code><span class="keyword">public static </span><span class="type"><a href="#AssetIcons_IconProjection">IconProjection</a></span> Perspective;</code>
 
 
-
+            <h2>Remarks</h2>
+<p>This is the default value for the styling of <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>.</p>
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_IconProjection_Orthographic">
     <div class="breadcrumbsBar">
@@ -1646,7 +1648,9 @@
 
             <h2>Summary</h2>
 <p>Represents an orthographic camera projection.</p>
-            <p>Also see: <code><a href="#AssetIcons_IconProjection_Perspective">Perspective</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_IconProjection_Perspective">Perspective</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
@@ -1659,6 +1663,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_ProductInformation">
     <div class="breadcrumbsBar">
@@ -1704,7 +1709,7 @@
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_ProductInformation_Copyright">Copyright</a></code></td>
-                        <td>A copyright notice for this asset. This field has a constant value of <code>"Copyright © Anthony Marmont 2019"</code>.</td>
+                        <td>Copyright notice for this asset. This field has a constant value of <code>"Copyright © Anthony Marmont 2019"</code>.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_ProductInformation_IssueTracker">IssueTracker</a></code></td>
@@ -1721,6 +1726,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_ProductInformation_Name">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1731,7 +1737,9 @@
 
             <h2>Summary</h2>
 <p>The current version of this asset.</p>
-            <p>Also see: <code><a href="#AssetIcons_ProductInformation_Version">Version</a></c>, <c><a href="#AssetIcons_ProductInformation_Description">Description</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_ProductInformation_Version">Version</a></code>, <code><a href="#AssetIcons_ProductInformation_Description">Description</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
@@ -1744,6 +1752,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_ProductInformation_Version">
     <div class="breadcrumbsBar">
@@ -1768,6 +1777,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_ProductInformation_Description">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1778,7 +1788,9 @@
 
             <h2>Summary</h2>
 <p>A brief description of this asset.</p>
-            <p>Also see: <code><a href="#AssetIcons_ProductInformation_Name">Name</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_ProductInformation_Name">Name</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
@@ -1791,6 +1803,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_ProductInformation_Author">
     <div class="breadcrumbsBar">
@@ -1815,6 +1828,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_ProductInformation_Copyright">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1824,7 +1838,7 @@
         <h1>Copyright</h1>
 
             <h2>Summary</h2>
-<p>A copyright notice for this asset.</p>
+<p>Copyright notice for this asset.</p>
 
         <h3>Definition</h3>
                 
@@ -1837,6 +1851,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_ProductInformation_IssueTracker">
     <div class="breadcrumbsBar">
@@ -1861,6 +1876,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1871,7 +1887,9 @@
 
             <h2>Summary</h2>
 <p>A model that represents the styles defined in the <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code> constructor.</p>
-            <p>Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></c>, <c><a target="_blank" href="https://docs.unity3d.com/ScriptReference/FontStyle.html">FontStyle</a></c>, <c><a href="#AssetIcons_IconAnchor">IconAnchor</a></c>, <c><a href="#AssetIcons_IconAspect">IconAspect</a></c>, <c><a href="#AssetIcons_IconAnchor">IconAnchor</a></c>, <c><a href="#AssetIcons_IconProjection">IconProjection</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_AssetIconAttribute">AssetIconAttribute</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -1951,6 +1969,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_Width">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1961,7 +1980,9 @@
 
             <h2>Summary</h2>
 <p>An expression that's evaluated to determine the width of the icon.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_Height">Height</a></c>, <c><a href="#AssetIcons_StyleDefinition_X">X</a></c>, <c><a href="#AssetIcons_StyleDefinition_Y">Y</a></c>, <c><a href="#AssetIcons_StyleDefinition_Display">Display</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_Height">Height</a></code>, <code><a href="#AssetIcons_StyleDefinition_X">X</a></code>, <code><a href="#AssetIcons_StyleDefinition_Y">Y</a></code>, <code><a href="#AssetIcons_StyleDefinition_Display">Display</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -1975,6 +1996,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_Height">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -1985,7 +2007,9 @@
 
             <h2>Summary</h2>
 <p>An expression that's evaluated to determine the height of the icon.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></c>, <c><a href="#AssetIcons_StyleDefinition_X">X</a></c>, <c><a href="#AssetIcons_StyleDefinition_Y">Y</a></c>, <c><a href="#AssetIcons_StyleDefinition_Display">Display</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></code>, <code><a href="#AssetIcons_StyleDefinition_X">X</a></code>, <code><a href="#AssetIcons_StyleDefinition_Y">Y</a></code>, <code><a href="#AssetIcons_StyleDefinition_Display">Display</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -1999,6 +2023,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_X">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2009,7 +2034,9 @@
 
             <h2>Summary</h2>
 <p>An expression that's evaluated to determine a horizontal offset of the icon.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></c>, <c><a href="#AssetIcons_StyleDefinition_Height">Height</a></c>, <c><a href="#AssetIcons_StyleDefinition_Y">Y</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></code>, <code><a href="#AssetIcons_StyleDefinition_Height">Height</a></code>, <code><a href="#AssetIcons_StyleDefinition_Y">Y</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -2023,6 +2050,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_Y">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2033,7 +2061,9 @@
 
             <h2>Summary</h2>
 <p>An expression that's evaluated to determine a vertical offset of the icon.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></c>, <c><a href="#AssetIcons_StyleDefinition_Height">Height</a></c>, <c><a href="#AssetIcons_StyleDefinition_X">X</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></code>, <code><a href="#AssetIcons_StyleDefinition_Height">Height</a></code>, <code><a href="#AssetIcons_StyleDefinition_X">X</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -2046,6 +2076,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_StyleDefinition_MaxSize">
     <div class="breadcrumbsBar">
@@ -2071,6 +2102,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_Anchor">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2081,7 +2113,9 @@
 
             <h2>Summary</h2>
 <p>An anchor that all difference in scale is orientated around.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></c>, <c><a href="#AssetIcons_StyleDefinition_Height">Height</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></code>, <code><a href="#AssetIcons_StyleDefinition_Height">Height</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -2094,6 +2128,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_StyleDefinition_Aspect">
     <div class="breadcrumbsBar">
@@ -2118,6 +2153,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_Display">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2128,7 +2164,9 @@
 
             <h2>Summary</h2>
 <p>An expression that's evaluated to whether the icon should be displayed.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></c>, <c><a href="#AssetIcons_StyleDefinition_Height">Height</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_Width">Width</a></code>, <code><a href="#AssetIcons_StyleDefinition_Height">Height</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -2142,6 +2180,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_Tint">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2152,6 +2191,9 @@
 
             <h2>Summary</h2>
 <p>A tint to apply to the icon.</p>
+            <p>
+                Also see: <code><a href="#AssetIcons_IconColor">IconColor</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -2164,6 +2206,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_StyleDefinition_Layer">
     <div class="breadcrumbsBar">
@@ -2188,6 +2231,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_FontStyle">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2198,7 +2242,9 @@
 
             <h2>Summary</h2>
 <p>A font style to use on all rendered text.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_TextAnchor">TextAnchor</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_TextAnchor">TextAnchor</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -2212,6 +2258,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_StyleDefinition_TextAnchor">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2222,7 +2269,9 @@
 
             <h2>Summary</h2>
 <p>An anchor for all rendered text.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition_FontStyle">FontStyle</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition_FontStyle">FontStyle</a></code>.
+            </p>
 
         <h3>Definition</h3>
         
@@ -2235,6 +2284,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_StyleDefinition_Projection">
     <div class="breadcrumbsBar">
@@ -2258,6 +2308,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Demo_Item">
     <div class="breadcrumbsBar">
@@ -2300,6 +2351,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_Demo_Item_Icon">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2313,7 +2365,9 @@
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> Icon;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/HeaderAttribute.html">Header</a></span>]
+[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> Icon;</code>
 
 
 
@@ -2322,6 +2376,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Demo_Prop">
     <div class="breadcrumbsBar">
@@ -2368,6 +2423,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_Demo_Prop_Icon">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2381,7 +2437,9 @@
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> Icon;</code>
+        <code>[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/FormerlySerializedAsAttribute.html">FormerlySerializedAs</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> Icon;</code>
 
 
 
@@ -2390,6 +2448,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Demo_Prop_Border">
     <div class="breadcrumbsBar">
@@ -2404,7 +2463,9 @@
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D.html">Texture2D</a></span> Border;</code>
+        <code>[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
+[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/FormerlySerializedAsAttribute.html">FormerlySerializedAs</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D.html">Texture2D</a></span> Border;</code>
 
 
 
@@ -2413,6 +2474,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Demo_VoxelItem">
     <div class="breadcrumbsBar">
@@ -2467,6 +2529,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_Demo_VoxelItem_Icon">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2480,7 +2543,9 @@
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a></span> Icon;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/HeaderAttribute.html">Header</a></span>]
+[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a></span> Icon;</code>
 
 
 
@@ -2489,6 +2554,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Demo_VoxelItem_Background">
     <div class="breadcrumbsBar">
@@ -2503,7 +2569,8 @@
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> Background;</code>
+        <code>[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Sprite.html">Sprite</a></span> Background;</code>
 
 
 
@@ -2512,6 +2579,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Demo_VoxelItem_ItemColor">
     <div class="breadcrumbsBar">
@@ -2526,7 +2594,8 @@
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> ItemColor;</code>
+        <code>[<span class="type"><a href="#AssetIcons_AssetIconAttribute">AssetIcon</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></span> ItemColor;</code>
 
 
 
@@ -2535,6 +2604,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Demo_VoxelItem_CraftsInto">
     <div class="breadcrumbsBar">
@@ -2559,6 +2629,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_AssetIconDrawer">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2569,7 +2640,9 @@
 
             <h2>Summary</h2>
 <p>Handles the drawing, sizing and tinting of the assets.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_CompiledStyleDefinition">CompiledStyleDefinition</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_CompiledStyleDefinition">CompiledStyleDefinition</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -2613,23 +2686,23 @@
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawSprite">DrawSprite</a></code></td>
-                        <td>Draws a sprite graphic at a specified rect.</td>
+                        <td>Draws a sprite graphic at a specified Rect.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawText">DrawText</a></code></td>
-                        <td>Draws text at a specified rect.</td>
+                        <td>Draws text at a specified Rect.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawTexture">DrawTexture</a></code></td>
-                        <td>Draws a texture graphic at a specified rect.</td>
+                        <td>Draws a texture graphic at a specified Rect.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawTexWithCoords">DrawTexWithCoords</a></code></td>
-                        <td>Draws a portion of a texture at a specified rect.</td>
+                        <td>Draws a portion of a texture at a specified Rect.</td>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_AssetIconDrawer_DrawTexWithUVCoords">DrawTexWithUVCoords</a></code></td>
-                        <td>Draws a portion of a texture at a specified rect.</td>
+                        <td>Draws a portion of a texture at a specified Rect.</td>
                     </tr>
             </table>
 
@@ -2639,6 +2712,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconDrawer_BackgroundColor">
     <div class="breadcrumbsBar">
@@ -2664,6 +2738,7 @@
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawBackground">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2675,6 +2750,7 @@
             <h2>Summary</h2>
 <p>Draws an empty background using <code><a href="#AssetIcons_Editors_AssetIconDrawer_BackgroundColor">BackgroundColor</a></code> to hide Unity's original icon.</p>
 
+
             <h2>Remarks</h2>
 <p>This <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></code> is used for masking the icon that Unity draws. </p><p>This changes with Untiy's pro-skin across differnet versions of Unity.</p>
         <div class="post-footer">
@@ -2682,6 +2758,7 @@
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawColor">
     <div class="breadcrumbsBar">
@@ -2695,11 +2772,13 @@
 <p>Draw a flat <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a></code>.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawObject">
     <div class="breadcrumbsBar">
@@ -2713,11 +2792,13 @@
 <p>Attempts to draw an icon for an object.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawSprite">
     <div class="breadcrumbsBar">
@@ -2728,7 +2809,8 @@
         <h1>DrawSprite</h1>
 
             <h2>Summary</h2>
-<p>Draws a sprite graphic at a specified rect.</p>
+<p>Draws a sprite graphic at a specified <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code>.</p>
+
 
             <h2>Remarks</h2>
 <p>This implementation draws a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D.html">Texture2D</a></code> and crops the boundaries. This may result in
@@ -2739,6 +2821,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawText">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2748,7 +2831,8 @@ sprites that are tightly packed to draw artifacts.</p>
         <h1>DrawText</h1>
 
             <h2>Summary</h2>
-<p>Draws text at a specified rect.</p>
+<p>Draws text at a specified <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code>.</p>
+
 
 
         <div class="post-footer">
@@ -2756,6 +2840,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawTexture">
     <div class="breadcrumbsBar">
@@ -2766,7 +2851,8 @@ sprites that are tightly packed to draw artifacts.</p>
         <h1>DrawTexture</h1>
 
             <h2>Summary</h2>
-<p>Draws a texture graphic at a specified rect.</p>
+<p>Draws a texture graphic at a specified <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code>.</p>
+
 
 
         <div class="post-footer">
@@ -2774,6 +2860,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawTexWithCoords">
     <div class="breadcrumbsBar">
@@ -2784,7 +2871,8 @@ sprites that are tightly packed to draw artifacts.</p>
         <h1>DrawTexWithCoords</h1>
 
             <h2>Summary</h2>
-<p>Draws a portion of a texture at a specified rect.</p>
+<p>Draws a portion of a texture at a specified <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code>.</p>
+
 
 
         <div class="post-footer">
@@ -2792,6 +2880,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconDrawer_DrawTexWithUVCoords">
     <div class="breadcrumbsBar">
@@ -2802,7 +2891,8 @@ sprites that are tightly packed to draw artifacts.</p>
         <h1>DrawTexWithUVCoords</h1>
 
             <h2>Summary</h2>
-<p>Draws a portion of a texture at a specified rect.</p>
+<p>Draws a portion of a texture at a specified <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code>.</p>
+
 
 
         <div class="post-footer">
@@ -2810,6 +2900,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_AssetIconProjectHooks">
     <div class="breadcrumbsBar">
@@ -2841,6 +2932,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_AssetIconRenderer">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2851,7 +2943,9 @@ sprites that are tightly packed to draw artifacts.</p>
 
             <h2>Summary</h2>
 <p>Used by AssetIcons to render Prefabs to a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D.html">Texture2D</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -2883,6 +2977,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_AssetIconRenderer_RenderModel">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2895,11 +2990,13 @@ sprites that are tightly packed to draw artifacts.</p>
 <p>Creates a preview <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D.html">Texture2D</a></code> of a model.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CameraSetup">
     <div class="breadcrumbsBar">
@@ -2911,11 +3008,14 @@ sprites that are tightly packed to draw artifacts.</p>
 
             <h2>Summary</h2>
 <p>A camera setup used in <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></code> to render a Prefab.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></c>, <c><a href="#AssetIcons_Editors_RenderCache">RenderCache</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></code>, <code><a href="#AssetIcons_Editors_RenderCache">RenderCache</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public struct</span> <span class="type">CameraSetup</span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute">Serializable</a></span>]
+<span class="keyword">public struct</span> <span class="type">CameraSetup</span>;</code>
 
 
             <h2>Instance Fields</h2>
@@ -2981,6 +3081,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CameraSetup_Padding">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -2994,7 +3095,8 @@ sprites that are tightly packed to draw artifacts.</p>
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.single">float</a></span> Padding;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/HeaderAttribute.html">Header</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.single">float</a></span> Padding;</code>
 
 
 
@@ -3003,6 +3105,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CameraSetup_PreviewDirection">
     <div class="breadcrumbsBar">
@@ -3027,6 +3130,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CameraSetup_TransparentBackground">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3040,7 +3144,8 @@ sprites that are tightly packed to draw artifacts.</p>
 
         <h3>Definition</h3>
                 
-        <code><span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a></span> TransparentBackground;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/HeaderAttribute.html">Header</a></span>]
+<span class="keyword">public </span><span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a></span> TransparentBackground;</code>
 
 
 
@@ -3049,6 +3154,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CameraSetup_BackgroundColor">
     <div class="breadcrumbsBar">
@@ -3073,6 +3179,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CameraSetup_Orthographic">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3096,6 +3203,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CameraSetup_ApplyToCamera">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3108,11 +3216,13 @@ sprites that are tightly packed to draw artifacts.</p>
 <p>Applies this <code><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a></code> to a Unity <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Camera.html">Camera</a></code>.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CameraSetup_Default">
     <div class="breadcrumbsBar">
@@ -3137,6 +3247,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CompiledStyleDefinition">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3147,7 +3258,9 @@ sprites that are tightly packed to draw artifacts.</p>
 
             <h2>Summary</h2>
 <p>A formatted representation of the <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code> for drawing graphics in the <code><a href="#AssetIcons_Editors_AssetIconDrawer">AssetIconDrawer</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></c>, <c><a href="#AssetIcons_Editors_AssetIconDrawer">AssetIconDrawer</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>, <code><a href="#AssetIcons_Editors_AssetIconDrawer">AssetIconDrawer</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -3229,6 +3342,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CompiledStyleDefinition_MaxSize">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3251,6 +3365,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CompiledStyleDefinition_Aspect">
     <div class="breadcrumbsBar">
@@ -3275,6 +3390,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CompiledStyleDefinition_Anchor">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3297,6 +3413,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CompiledStyleDefinition_Tint">
     <div class="breadcrumbsBar">
@@ -3321,6 +3438,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CompiledStyleDefinition_Layer">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3343,6 +3461,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CompiledStyleDefinition_FontStyle">
     <div class="breadcrumbsBar">
@@ -3367,6 +3486,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CompiledStyleDefinition_TextAnchor">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3389,6 +3509,7 @@ sprites that are tightly packed to draw artifacts.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CompiledStyleDefinition_Projection">
     <div class="breadcrumbsBar">
@@ -3413,6 +3534,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_CompiledStyleDefinition_Filter">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3425,11 +3547,13 @@ sprites that are tightly packed to draw artifacts.</p>
 <p>Applies this <code><a href="#AssetIcons_Editors_CompiledStyleDefinition">CompiledStyleDefinition</a></code> to a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Rect.html">Rect</a></code>.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_CompiledStyleDefinition_Default">
     <div class="breadcrumbsBar">
@@ -3441,7 +3565,9 @@ sprites that are tightly packed to draw artifacts.</p>
 
             <h2>Summary</h2>
 <p>A <code><a href="#AssetIcons_Editors_CompiledStyleDefinition">CompiledStyleDefinition</a></code> for the default constructor of <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_StyleDefinition">StyleDefinition</a></code>.
+            </p>
 
         <h3>Definition</h3>
                 
@@ -3455,6 +3581,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_RenderCache">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3465,7 +3592,9 @@ sprites that are tightly packed to draw artifacts.</p>
 
             <h2>Summary</h2>
 <p>Cache renders of the models that we would like to render.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></c>, <c><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_AssetIconRenderer">AssetIconRenderer</a></code>, <code><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -3501,6 +3630,7 @@ sprites that are tightly packed to draw artifacts.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_RenderCache_GetTexture">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3513,11 +3643,13 @@ sprites that are tightly packed to draw artifacts.</p>
 <p>Retrieves a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/Texture2D.html">Texture2D</a></code> from the cache for a <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a></code> using a <code><a href="#AssetIcons_Editors_CameraSetup">CameraSetup</a></code>.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_RenderCache_ClearCache">
     <div class="breadcrumbsBar">
@@ -3531,11 +3663,13 @@ sprites that are tightly packed to draw artifacts.</p>
 <p>Clears all rendered textures from this cache.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences">
     <div class="breadcrumbsBar">
@@ -3547,7 +3681,9 @@ sprites that are tightly packed to draw artifacts.</p>
 
             <h2>Summary</h2>
 <p>Stores AssetIcons preferences information in <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorPrefs.html">EditorPrefs</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset">PreferencesPreset</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset">PreferencesPreset</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -3583,7 +3719,7 @@ sprites that are tightly packed to draw artifacts.</p>
                 </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_Preferences_AssetIconsPreferences_EditorPrefsKey">EditorPrefsKey</a></code></td>
-                        <td>The EditorPrefs key used to store this users preferences. This field has a constant value of <code>"AssetIcons_Preferences"</code>.</td>
+                        <td>The EditorPrefs key used to store the current users preferences. This field has a constant value of <code>"AssetIcons_Preferences"</code>.</td>
                     </tr>
             </table>
 
@@ -3630,6 +3766,7 @@ installed will not preserve these saved preferences.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences_EditorPrefsKey">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3639,7 +3776,7 @@ installed will not preserve these saved preferences.</p>
         <h1>EditorPrefsKey</h1>
 
             <h2>Summary</h2>
-<p>The <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorPrefs.html">EditorPrefs</a></code> key used to store this users preferences.</p>
+<p>The <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/EditorPrefs.html">EditorPrefs</a></code> key used to store the current users preferences.</p>
 
         <h3>Definition</h3>
                 
@@ -3652,6 +3789,7 @@ installed will not preserve these saved preferences.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences_CurrentPreferences">
     <div class="breadcrumbsBar">
@@ -3695,6 +3833,7 @@ installed will not preserve these saved preferences.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences_DrawGUIStyles">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3718,6 +3857,7 @@ installed will not preserve these saved preferences.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences_Enabled">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3740,6 +3880,7 @@ installed will not preserve these saved preferences.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences_PrefabResolution">
     <div class="breadcrumbsBar">
@@ -3766,6 +3907,7 @@ adjusting this to boost performance.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences_SelectionTint">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3788,6 +3930,7 @@ adjusting this to boost performance.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_AssetIconsPreferences_TypeIcons">
     <div class="breadcrumbsBar">
@@ -3813,6 +3956,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetReference">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3826,7 +3970,8 @@ file icons.</p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public sealed class</span> <span class="type">AssetReference</span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute">Serializable</a></span>]
+<span class="keyword">public sealed class</span> <span class="type">AssetReference</span>;</code>
 
 
             <h2>Instance Fields</h2>
@@ -3881,6 +4026,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetReference_AssetPath">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3903,6 +4049,7 @@ file icons.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_AssetReference_AssetName">
     <div class="breadcrumbsBar">
@@ -3927,6 +4074,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetReference_ObjectReference">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3950,6 +4098,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_AssetReference_GetFromPath">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -3962,11 +4111,13 @@ file icons.</p>
 <p>Loads an asset from the <code><a target="_blank" href="https://docs.unity3d.com/ScriptReference/AssetDatabase.html">AssetDatabase</a></code> with the specified name.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_BoolEventField">
     <div class="breadcrumbsBar">
@@ -3978,11 +4129,14 @@ file icons.</p>
 
             <h2>Summary</h2>
 <p>A concrete implementation of the <code><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></code> for <code><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_Preferences_IntEventField">IntEventField</a></c>, <c><a href="#AssetIcons_Editors_Preferences_ColorTintEventField">ColorTintEventField</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_Preferences_IntEventField">IntEventField</a></code>, <code><a href="#AssetIcons_Editors_Preferences_ColorTintEventField">ColorTintEventField</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public sealed class</span> <span class="type">BoolEventField</span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField__">EventField<bool></a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute">Serializable</a></span>]
+<span class="keyword">public sealed class</span> <span class="type">BoolEventField</span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField__">EventField&lt;bool&gt;</a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
 
 
 
@@ -4000,6 +4154,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_ColorTint">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4010,11 +4165,14 @@ file icons.</p>
 
             <h2>Summary</h2>
 <p>A data type used to tint graphics.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_Preferences_ColorTint">ColorTint</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_Preferences_ColorTintEventField">ColorTintEventField</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public struct</span> <span class="type">ColorTint</span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute">Serializable</a></span>]
+<span class="keyword">public struct</span> <span class="type">ColorTint</span>;</code>
 
 
 
@@ -4057,6 +4215,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_ColorTint_TintColor">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4079,6 +4238,7 @@ file icons.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_ColorTint_TintStrength">
     <div class="breadcrumbsBar">
@@ -4103,6 +4263,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_ColorTint_Apply">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4115,11 +4276,13 @@ file icons.</p>
 <p>Applies the tint to a source color.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_ColorTintEventField">
     <div class="breadcrumbsBar">
@@ -4131,11 +4294,14 @@ file icons.</p>
 
             <h2>Summary</h2>
 <p>A concrete implementation of the <code><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></code> for <code><a href="#AssetIcons_Editors_Preferences_ColorTint">ColorTint</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_Preferences_BoolEventField">BoolEventField</a></c>, <c><a href="#AssetIcons_Editors_Preferences_IntEventField">IntEventField</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_Preferences_BoolEventField">BoolEventField</a></code>, <code><a href="#AssetIcons_Editors_Preferences_IntEventField">IntEventField</a></code>, <code><a href="#AssetIcons_Editors_Preferences_ColorTint">ColorTint</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public sealed class</span> <span class="type">ColorTintEventField</span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField__">EventField<ColorTint></a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute">Serializable</a></span>]
+<span class="keyword">public sealed class</span> <span class="type">ColorTintEventField</span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField__">EventField&lt;ColorTint&gt;</a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
 
 
 
@@ -4152,6 +4318,7 @@ file icons.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_EventField">
     <div class="breadcrumbsBar">
@@ -4183,6 +4350,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_EventField__">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4196,7 +4364,7 @@ file icons.</p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public class</span> <span class="type">EventField<T></span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
+        <code><span class="keyword">public class</span> <span class="type">EventField&lt;T&gt;</span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
 
 
 
@@ -4224,6 +4392,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_EventField_T__Value">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4246,6 +4415,7 @@ file icons.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_FromValuesAttribute">
     <div class="breadcrumbsBar">
@@ -4292,6 +4462,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_FromValuesAttribute_Names">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4314,6 +4485,7 @@ file icons.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_FromValuesAttribute_Values">
     <div class="breadcrumbsBar">
@@ -4338,6 +4510,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_IconMapping">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4348,11 +4521,14 @@ file icons.</p>
 
             <h2>Summary</h2>
 <p>Provides a serializable dictionary for mapping an extension type to an <code><a href="#AssetIcons_Editors_Preferences_AssetReference">AssetReference</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset">PreferencesPreset</a></c>, <c><a href="#AssetIcons_Editors_Preferences_AssetReference">AssetReference</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_Preferences_PreferencesPreset">PreferencesPreset</a></code>, <code><a href="#AssetIcons_Editors_Preferences_AssetReference">AssetReference</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public sealed class</span> <span class="type">IconMapping</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute">Serializable</a></span>]
+<span class="keyword">public sealed class</span> <span class="type">IconMapping</span> : <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
 
 
 
@@ -4373,7 +4549,7 @@ file icons.</p>
                     </tr>
                     <tr>
                         <td><code><a href="#AssetIcons_Editors_Preferences_IconMapping_Remove">Remove</a></code></td>
-                        <td>Removes a element from the table using a key.</td>
+                        <td>Removes an element from the table using a key.</td>
                     </tr>
             </table>
 
@@ -4388,6 +4564,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_IconMapping_Add">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4400,11 +4577,13 @@ file icons.</p>
 <p>Add a key and a value to the <code><a href="#AssetIcons_Editors_Preferences_IconMapping">IconMapping</a></code>.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_IconMapping_Clear">
     <div class="breadcrumbsBar">
@@ -4418,11 +4597,13 @@ file icons.</p>
 <p>Clear all values from the <code><a href="#AssetIcons_Editors_Preferences_IconMapping">IconMapping</a></code>.</p>
 
 
+
         <div class="post-footer">
             <p>Report a problem on this page</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_IconMapping_Remove">
     <div class="breadcrumbsBar">
@@ -4433,7 +4614,8 @@ file icons.</p>
         <h1>Remove</h1>
 
             <h2>Summary</h2>
-<p>Removes a element from the table using a key.</p>
+<p>Removes an element from the table using a key.</p>
+
 
 
         <div class="post-footer">
@@ -4441,6 +4623,7 @@ file icons.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_IntEventField">
     <div class="breadcrumbsBar">
@@ -4452,11 +4635,14 @@ file icons.</p>
 
             <h2>Summary</h2>
 <p>A concrete implementation of the <code><a href="#AssetIcons_Editors_Preferences_EventField">EventField</a></code> for <code><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.int32">int</a></code>.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_Preferences_BoolEventField">BoolEventField</a></c>, <c><a href="#AssetIcons_Editors_Preferences_ColorTintEventField">ColorTintEventField</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_Preferences_BoolEventField">BoolEventField</a></code>, <code><a href="#AssetIcons_Editors_Preferences_ColorTintEventField">ColorTintEventField</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
-        <code><span class="keyword">public sealed class</span> <span class="type">IntEventField</span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField__">EventField<int></a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
+        <code>[<span class="type"><a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute">Serializable</a></span>]
+<span class="keyword">public sealed class</span> <span class="type">IntEventField</span> : <span class="type"><a href="#AssetIcons_Editors_Preferences_EventField__">EventField&lt;int&gt;</a></span>, <span class="type"><a target="_blank" href="https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></span>;</code>
 
 
 
@@ -4474,6 +4660,7 @@ file icons.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_PreferencesPreset">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4484,7 +4671,9 @@ file icons.</p>
 
             <h2>Summary</h2>
 <p>Represents user preferences in a serializable format.</p>
-            <p>Also see: <code><a href="#AssetIcons_Editors_Preferences_AssetIconsPreferences">AssetIconsPreferences</a>.</code></p>
+            <p>
+                Also see: <code><a href="#AssetIcons_Editors_Preferences_AssetIconsPreferences">AssetIconsPreferences</a></code>.
+            </p>
 
         <h3>Definition</h3>
 
@@ -4533,6 +4722,7 @@ file icons.</td>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_PreferencesPreset_Enabled">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4556,6 +4746,7 @@ file icons.</td>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_PreferencesPreset_DrawGUIStyles">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4578,6 +4769,7 @@ file icons.</td>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_PreferencesPreset_PrefabResolution">
     <div class="breadcrumbsBar">
@@ -4604,6 +4796,7 @@ adjusting this to boost performance.</p>
     </div>
 </article>
 
+
 <article id="AssetIcons_Editors_Preferences_PreferencesPreset_SelectionTint">
     <div class="breadcrumbsBar">
         <!--<a href="#Radient">Radient</a> / GradientSampler-->
@@ -4626,6 +4819,7 @@ adjusting this to boost performance.</p>
         </div>
     </div>
 </article>
+
 
 <article id="AssetIcons_Editors_Preferences_PreferencesPreset_TypeIcons">
     <div class="breadcrumbsBar">
