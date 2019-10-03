@@ -1,7 +1,7 @@
 ---
 name: Documentation
-about: Suggest an idea for this project
-labels: ✨ enhancement
+about: Report an issue with the documentation
+labels: 📝 documentation
 ---
 
-Describe the end user-facing experience of this feature. If it's purely a tool, this section can describe the user of the tools experience.
+Describe the issue with the documentation or request a change.
