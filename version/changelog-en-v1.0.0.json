@@ -4,7 +4,17 @@
 	"New": [
 		{
 			"Headline": "Customizable ScriptableObject icons",
-			"Body": "",
+			"Body": "Added the AssetIconAttribute to draw custom ScriptableObject icons.",
+			"Issue": ""
+		},
+		{
+			"Headline": "Custom Error Messages",
+			"Body": "Print log lines that open up to the location of the erroneous attribute.",
+			"Issue": ""
+		},
+		{
+			"Headline": "Object Selector Support (2017.1 onwards)",
+			"Body": "Added support for rendering icons in the Object Selector Window.",
 			"Issue": ""
 		}
 	],
