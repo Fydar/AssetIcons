@@ -16,6 +16,18 @@
 			"Headline": "Preferences menu",
 			"Body": "Added a tab to Unity's Preferences Window for customising AssetIcons.",
 			"Issue": "https://github.com/Fydar/AssetIcons/issues/3"
+		}
+	],
+	"Changed": [
+		{
+			"Headline": "AssetIconAttribute removed from the Global Namespace",
+			"Body": "Moved AssetIconAttribute from the Global Namespace to \"AssetIcons\".",
+			"Issue": ""
+		},
+		{
+			"Headline": "Cleaned up AssetIconDrawer APIs",
+			"Body": "Unified APIs for interfacing with AssetIcons' drawing tools.",
+			"Issue": ""
 		},
 		{
 			"Headline": "Updated Documentation Format",
@@ -23,7 +35,6 @@
 			"Issue": "https://github.com/Fydar/AssetIcons/issues/4"
 		}
 	],
-	"Changed": [],
 	"Removed": [
 		{
 			"Headline": "Modules System",
