@@ -29,4 +29,5 @@ public class ItemInformation : ScriptableObject
 
 This repository serves as the issue tracker for AssetIcons. Feel free to submit suggestions, bugs or questions here.
 
-[![bugs](https://img.shields.io/github/issues/Fydar/AssetIcons/bug.svg?color=%23c66649&label=bugs)](https://github.com/Fydar/AssetIcons/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+[![bugs](https://img.shields.io/github/issues/Fydar/AssetIcons/🐛%20bug?color=c66649&label=bugs
+)](https://github.com/Fydar/AssetIcons/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
