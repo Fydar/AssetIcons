@@ -1,7 +1,7 @@
 {
 	"CurrentVersion": "2.0.0",
 	"WebChangelogSource": "https://github.com/Fydar/AssetIcons/wiki/{1}-v{0}",
-	"JsonChangelogSource": "https://raw.githubusercontent.com/Fydar/AssetIcons/master/version/changelog-{1}-v{0}.json",
+	"JsonChangelogSource": "https://fydar.github.io/AssetIcons/version/changelog-{1}-v{0}.json",
 	"VersionHistory": [
 		{
 			"Version": "1.0.0",
