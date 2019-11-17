@@ -1,6 +1,6 @@
 # AssetIcons
 
-[![AssetIcons Banner](https://assetstorev1-prd-cdn.unity3d.com/key-image/06252d2b-a58f-4e53-a44c-e6903bcf26de.jpg)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
+[![AssetIcons Banner](./docs/img/cover-1950x1300.png)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
 
 Dynamic ScriptableObject icons with a single attribute.
 
@@ -15,7 +15,7 @@ public class ItemInformation : ScriptableObject
 }
 ```
 
-[![Available on the Unity Asset Store](https://anthonymarmont.files.wordpress.com/2017/09/buynow_unity.png)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
+[![Available on the Unity Asset Store](./docs/img/buy-now-190x67.png)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
 
 ## Features
 
