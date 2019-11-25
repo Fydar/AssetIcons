@@ -13,9 +13,19 @@
 			"Issue": "https://github.com/Fydar/AssetIcons/issues/6"
 		},
 		{
+			"Headline": "Support for rendering prefabs",
+			"Body": "Added support for rendering GameObject's to use as a ScriptableObject icon.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/2"
+		},
+		{
 			"Headline": "Preferences menu",
 			"Body": "Added a tab to Unity's Preferences Window for customising AssetIcons.",
 			"Issue": "https://github.com/Fydar/AssetIcons/issues/3"
+		},
+		{
+			"Headline": "Update Checker",
+			"Body": "In-application update checker for AssetIcons.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/14"
 		}
 	],
 	"Changed": [
@@ -43,6 +53,16 @@
 		}
 	],
 	"Fixes": [
+		{
+			"Headline": "Made icons draw in \"One-Column\" mode",
+			"Body": "Fixed issue where icons weren't being drawn when in \"One-Column\" mode.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/26"
+		},
+		{
+			"Headline": "Add support for Unity-drawn flairs",
+			"Body": "Added support for Unity Collab (and other) flairs.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/25"
+		},
 		{
 			"Headline": "ReflectionTypeLoadException after code recompilation",
 			"Body": "This exception was being thrown after code recompilation only on certain environments.",
