@@ -41,7 +41,7 @@ This repository serves as the issue tracker for AssetIcons. Feel free to submit 
 
 ## Find out more
 
-For support or enquireries, please contact me at dev.anthonymarmont@gmail.com
+For support or enquiries, please contact me at dev.anthonymarmont@gmail.com
 
 - [Store page](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
 - [Full documentation and usage guide](https://fydar.github.io/AssetIcons/Documentation#home)
