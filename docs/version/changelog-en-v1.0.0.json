@@ -5,7 +5,7 @@
 		{
 			"Headline": "Customizable ScriptableObject icons",
 			"Body": "Added the AssetIconAttribute to draw custom ScriptableObject icons.",
-			"Issue": ""
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/8"
 		},
 		{
 			"Headline": "Custom Error Messages",
