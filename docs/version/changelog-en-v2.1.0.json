@@ -1,0 +1,42 @@
+{
+	"Version": "2.1.0",
+	"Flair": "Major Release",
+	"New": [
+		{
+			"Headline": "API for creating AssetIcons addons",
+			"Body": "Created an API that allows users to customize and extend AssetIcons.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/30"
+		},
+		{
+			"Headline": "Support for Unity Addressables Asset References",
+			"Body": "Utilised the API for expanding AssetIcons with new features to add support for Unity's Addressables.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/10"
+		},
+		{
+			"Headline": "Updated preferences menu design",
+			"Body": "Now with clearer links for support and queries as well as a leave-a-review dialog.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/32"
+		}
+	],
+	"Changed": [
+		{
+			"Headline": "Removed allocations from the draw-loop",
+			"Body": "Optimized the draw-loop by removing allocations and expanding caching.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/17"
+		},
+		{
+			"Headline": "Improved documentation look and feel",
+			"Body": "Improved the documentation styling with the new logo and new graphics.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/36"
+		}
+	],
+	"Removed": [
+	],
+	"Fixes": [
+		{
+			"Headline": "Fixed issues when used alongside JetBrains.Rider plugin",
+			"Body": "Fixed compiler errors when using alongside JetBrains.Rider plugin by removing my compatibility-shim.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/35"
+		}
+	]
+}
