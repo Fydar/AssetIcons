@@ -34,6 +34,11 @@
 	],
 	"Fixes": [
 		{
+			"Headline": "Fixed long delays after domain reload",
+			"Body": "Limited the search for the AssetIcon attribute to just dependant assemblies.",
+			"Issue": "https://github.com/Fydar/AssetIcons/issues/37"
+		},
+		{
 			"Headline": "Fixed issues when used alongside JetBrains.Rider plugin",
 			"Body": "Fixed compiler errors when using alongside JetBrains.Rider plugin by removing my compatibility-shim.",
 			"Issue": "https://github.com/Fydar/AssetIcons/issues/35"
