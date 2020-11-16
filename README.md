@@ -1,9 +1,10 @@
-[![AssetIcons Banner](./docs/img/cover_1950x1300.png)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
 
-# AssetIcons
 
-[![bugs](https://img.shields.io/github/issues/Fydar/AssetIcons/🐛%20bug?color=c66649&label=bugs
-)](https://github.com/Fydar/AssetIcons/issues?q=is%3Aissue+is%3Aopen+label%3Abug) [![Documentation](https://img.shields.io/badge/-📄%20Documentation-4593c4.svg)](https://fydar.github.io/AssetIcons/Documentation#home) [![Documentation](https://img.shields.io/badge/Asset%20Store-%2412.00-333333.svg?logo=unity)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
+[![AssetIcons Header](./docs/img/header.svg)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
+
+<p align=center><a title="https://github.com/Fydar/AssetIcons/issues?q=is%3Aissue+is%3Aopen+label%3Abug" href="https://github.com/Fydar/AssetIcons/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img id="image-hash--1153140688" src="https://img.shields.io/github/issues/Fydar/AssetIcons/%F0%9F%90%9B%20bug?color=c66649&amp;label=bugs" alt="bugs" /></a>&nbsp;<a title="https://fydar.github.io/AssetIcons/Documentation#home" href="https://fydar.github.io/AssetIcons/Documentation#home"><img id="image-hash-1560990068" src="https://img.shields.io/badge/-%F0%9F%93%84%20Documentation-4593c4.svg" alt="Documentation" /></a>&nbsp;<a title="https://assetstore.unity.com/packages/tools/gui/asseticons-100547" href="https://assetstore.unity.com/packages/tools/gui/asseticons-100547"><img id="image-hash--133373646" src="https://img.shields.io/badge/Asset%20Store-%2412.00-333333.svg?logo=unity" alt="Documentation" /></a></p>
+<div>&nbsp;</div>
+<p>
 
 Organise your projects and manage your assets with a single attribute.
 
@@ -19,8 +20,6 @@ public class ItemInformation : ScriptableObject
 }
 ```
 
-[![Available on the Unity Asset Store](./docs/img/buy-now_360x93.png)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
-
 ## Features
 
 - Dynamic icons for ScriptableObjects
@@ -33,6 +32,8 @@ public class ItemInformation : ScriptableObject
 - Error detection and reporting
 - Support for Unity's Collaborate overlay
 - Support for Unity's Version Control overlay
+
+[![Available on the Unity Asset Store](./docs/img/buy-now_360x93.png)](https://assetstore.unity.com/packages/tools/gui/asseticons-100547)
 
 ## Issue Tracker
 
